@@ -11,9 +11,12 @@ RUN apt-get update \
            dnsutils \
            iputils-ping \
            telnet \
+           procps \
+           less \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done."
 
 COPY motd /etc/motd
+RUN '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
 
 CMD [ "/usr/bin/bash" ]

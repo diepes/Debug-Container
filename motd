@@ -16,5 +16,4 @@
       $ ip addr
   * Check SSL/TLS cert
       $ openssl s_client -connect <host/ip>:443
-    
 
