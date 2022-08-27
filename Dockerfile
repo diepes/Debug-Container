@@ -14,4 +14,6 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done."
 
+COPY motd /etc/motd
+
 CMD [ "/usr/bin/bash" ]
