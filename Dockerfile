@@ -17,6 +17,6 @@ RUN apt-get update \
     && echo "# apt done."
 
 COPY motd /etc/motd
-RUN '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
+RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
 
 CMD [ "/usr/bin/bash" ]
