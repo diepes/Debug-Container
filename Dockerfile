@@ -16,6 +16,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done."
 
+COPY entrypoint* /
 COPY motd /etc/motd
 RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
 
