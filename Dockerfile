@@ -13,6 +13,7 @@ RUN apt-get update \
            telnet \
            procps \
            less \
+           python3 \
            openssh-server \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done."
