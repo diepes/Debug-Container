@@ -1,0 +1,5 @@
+# Allow sudo in debug container
+# Commonly used container id's
+User_Alias ADMINS = #1001, #1000, #999
+
+ADMINS ALL = NOPASSWD: ALL

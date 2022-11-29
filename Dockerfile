@@ -15,9 +15,12 @@ RUN apt-get update \
            less \
            python3 \
            openssh-server \
+           pv \
+           sudo \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done."
 
+COPY sudoers-debug /etc/sudoers.d/
 COPY entrypoint* /
 COPY motd /etc/motd
 RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
