@@ -20,10 +20,17 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done."
 
+ARG ROOT_PASS="ilovelinux"
+# Note: generate encrypted password with $(openssl passwd -6 tm-admin-example)
+RUN echo 'root:$(openssl passwd -6 $ROOT_PASS)' | chpasswd --encrypted root \
+    && useradd --system --create-home --no-log-init --gid root --groups sudo --uid 1001 --password '$(openssl passwd -6 $ROOT_PASS)' user1001 \
+    && useradd --system --create-home --no-log-init --gid root --groups sudo --uid 1000 --password '$(openssl passwd -6 $ROOT_PASS)' user1000 \
+    && useradd --system --create-home --no-log-init --gid root --groups sudo  --uid 999 --password '$(openssl passwd -6 $ROOT_PASS)' user999
+    # Add default user, to allow sudo if debug container attached to running k8s pod
+
 COPY sudoers-debug /etc/sudoers.d/
 COPY entrypoint* /
 COPY motd /etc/motd
 RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
 
 CMD [ "/usr/bin/env", "bash" ]
-#CMD [ "/bin/sleep", "3600" ]
