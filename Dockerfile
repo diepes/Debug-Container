@@ -5,20 +5,39 @@ RUN apt-get update \
            openssl \
            jo \
            vim-tiny \
-           tcpdump \
-           ngrep \
-           iproute2 \
-           dnsutils \
-           iputils-ping \
-           telnet \
+           tcpdump ngrep \
+           iproute2 dnsutils iputils-ping telnet \
            procps \
            less \
-           python3 \
-           openssh-server \
+           python3 python3-pip \
+           openssh-server ssh-client \
            pv \
            sudo \
+           git unzip \
     && rm -rf /var/lib/apt/lists/* \
-    && echo "# apt done."
+    && echo "# apt done." \
+    && echo "#Built @ $(date -Is)" >> /info-built.txt
+
+#Install ansible
+RUN pip3 install --upgrade pip; \
+    pip3 install --upgrade virtualenv; \
+    pip3 install pywinrm[kerberos]; \
+    pip3 install pywinrm; \
+    pip3 install jmspath; \
+    pip3 install requests; \
+    python3 -m pip install ansible; 
+
+#Install Azure cli and ansible modules
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash; \
+    ansible-galaxy collection install azure.azcollection; \
+    pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt;
+
+#Install AWS cli
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"; \
+    unzip /tmp/awscliv2.zip -d /tmp; \
+    /tmp/aws/install; \
+    rm -rf /tmp/aws*;
+
 
 ARG ROOT_PASS="ilovelinux"
 # Note: generate encrypted password with $(openssl passwd -6 tm-admin-example)
