@@ -39,7 +39,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/aws
     rm -rf /tmp/aws*;
 
 #Install rust
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 ARG ROOT_PASS="ilovelinux"
 # Note: generate encrypted password with $(openssl passwd -6 tm-admin-example)
