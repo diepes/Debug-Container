@@ -1,19 +1,19 @@
-FROM docker.io/debian:bullseye-slim
+FROM --platform=linux/amd64 docker.io/debian:stable-slim
 RUN apt-get update \
     && apt-get install -y \
-           curl \
-           openssl \
-           jo \
-           vim-tiny \
-           tcpdump ngrep \
-           iproute2 dnsutils iputils-ping telnet \
-           procps \
-           less \
-           python3 python3-pip \
-           openssh-server ssh-client \
-           pv \
-           sudo \
-           git unzip \
+        curl \
+        openssl \
+        jo \
+        vim-tiny \
+        tcpdump ngrep \
+        iproute2 dnsutils iputils-ping telnet \
+        procps \
+        less \
+        python3 python3-pip \
+        openssh-server ssh-client \
+        pv \
+        sudo \
+        git unzip \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done." \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
@@ -25,7 +25,7 @@ RUN pip3 install --upgrade pip; \
     pip3 install pywinrm; \
     pip3 install jmspath; \
     pip3 install requests; \
-    python3 -m pip install ansible; 
+    python3 -m pip install ansible;
 
 #Install Azure cli and ansible modules
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash; \
@@ -38,6 +38,8 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/aws
     /tmp/aws/install; \
     rm -rf /tmp/aws*;
 
+#Install rust
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ARG ROOT_PASS="ilovelinux"
 # Note: generate encrypted password with $(openssl passwd -6 tm-admin-example)
