@@ -14,6 +14,11 @@ RUN apt-get update \
         pv \
         sudo \
         git unzip \
+        musl-dev musl-tools \
+        libpq-dev \
+        libsqlite-dev \
+        libssl-dev \
+        linux-libc-dev \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done." \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
