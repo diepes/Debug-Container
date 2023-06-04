@@ -1,10 +1,13 @@
 # Debug-Container
 
-Container based on Debian with debug tools added.
+Container based on Debian with debug tools added. (--platform=linux/amd64)
+
+- aws-cli
+- rust + cargo
 
 ## To attach the container to running k8s pod to debug
 
-* Requires k8s > 2.24 (2021)
+- Requires k8s > 2.24 (2021)
 
  1. Get the name of the pod and the container in the pod to attach to
  2. POD_NAME="debug"
@@ -21,8 +24,9 @@ Container based on Debian with debug tools added.
 
 ## Software in container
 
-* ansible
-* azure cli
-* git
-* rust
-* ssh
+- ansible
+- aws cli
+- azure cli
+- git
+- rust
+- ssh

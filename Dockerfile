@@ -2,7 +2,7 @@ FROM --platform=linux/amd64 docker.io/debian:stable-slim
 RUN apt-get update \
     && apt-get install -y \
         curl \
-        openssl \
+        openssl pkg-config \
         jo \
         vim-tiny \
         tcpdump ngrep \
