@@ -16,7 +16,6 @@ RUN apt-get update \
         git unzip \
         musl-dev musl-tools \
         libpq-dev \
-        libsqlite-dev \
         libssl-dev \
         linux-libc-dev \
     && rm -rf /var/lib/apt/lists/* \
