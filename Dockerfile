@@ -18,13 +18,18 @@ RUN apt-get update \
         libpq-dev \
         libssl-dev \
         linux-libc-dev \
+        libkrb5-dev \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done." \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
 
 # Install ansible
-RUN pip3 install --break-system-packages --upgrade pip virtualenv &&\
-    pip3 install --break-system-packages pywinrm[kerberos] pywinrm jmspath requests
+RUN pip3 install --break-system-packages --upgrade \
+            pip virtualenv \
+    && pip3 install --break-system-packages \
+            pykerberos pywinrm[kerberos] pywinrm requests
+RUN pip3 install --break-system-packages \
+            jmespath
 
 # Install Azure cli and ansible modules
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
