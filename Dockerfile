@@ -23,15 +23,15 @@ RUN apt-get update \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
 
 # Install ansible
-RUN pip3 install --break-system-packages --upgrade pip virtualenv; &&\
+RUN pip3 install --break-system-packages --upgrade pip virtualenv &&\
     pip3 install --break-system-packages pywinrm[kerberos] pywinrm jmspath requests
 
 # Install Azure cli and ansible modules
-RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash;
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
 RUN pip3 install --break-system-packages ansible &&\
     ansible-galaxy collection install azure.azcollection --force &&\
-    pip3 install --break-system-packages -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt;
+    pip3 install --break-system-packages -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt
 
 # Install AWS cli
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip" &&\
