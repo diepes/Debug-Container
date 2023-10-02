@@ -3,9 +3,13 @@
 Container based on Debian with debug tools added. (--platform=linux/amd64)
 
 - aws-cli
+- az azure cli
 - rust + cargo
+- nodejs nvm
+- ansible
+- network tools: ssh, tcpdump, ngrep, dnsutils(dig), etc.
 
-## To attach the container to running k8s pod to debug
+## Usage example: To attach the container to running k8s pod to debug
 
 - Requires k8s > 2.24 (2021)
 
@@ -30,3 +34,4 @@ Container based on Debian with debug tools added. (--platform=linux/amd64)
 - git
 - rust
 - ssh
+- nvm (nodejs)

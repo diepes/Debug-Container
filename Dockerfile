@@ -22,28 +22,41 @@ RUN apt-get update \
     && echo "# apt done." \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
 
-#Install ansible
-RUN pip3 install --upgrade pip; \
-    pip3 install --upgrade virtualenv; \
-    pip3 install pywinrm[kerberos]; \
-    pip3 install pywinrm; \
-    pip3 install jmspath; \
-    pip3 install requests; \
-    python3 -m pip install ansible;
+# Install ansible
+RUN pip3 install --break-system-packages --upgrade pip virtualenv; &&\
+    pip3 install --break-system-packages pywinrm[kerberos] pywinrm jmspath requests
 
-#Install Azure cli and ansible modules
-RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash; \
-    ansible-galaxy collection install azure.azcollection; \
-    pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt;
+# Install Azure cli and ansible modules
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash;
 
-#Install AWS cli
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"; \
-    unzip /tmp/awscliv2.zip -d /tmp; \
-    /tmp/aws/install; \
-    rm -rf /tmp/aws*;
+RUN pip3 install --break-system-packages ansible &&\
+    ansible-galaxy collection install azure.azcollection --force &&\
+    pip3 install --break-system-packages -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt;
 
-#Install rust
+# Install AWS cli
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip" &&\
+    unzip /tmp/awscliv2.zip -d /tmp &&\
+    /tmp/aws/install &&\
+    rm -rf /tmp/aws*
+
+# Install rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+# Install nodejs nvm node version manager
+ENV NODE_VERSION=20
+ENV NVM_DIR="/usr/local/nvm"
+# NVM v0.39.6 2023-08 - Use git commit to pin code.
+ENV NVM_VERSION=c92adb3c479d70bb29f4399a808c972ef41510e7
+# Node install - fixed git nvm version. 
+RUN git clone https://github.com/nvm-sh/nvm.git "${NVM_DIR}" 
+RUN mkdir -p $NVM_DIR
+WORKDIR  "${NVM_DIR}"
+RUN git checkout ${NVM_VERSION} \
+    && \. "./nvm.sh" \
+    && nvm install "${NODE_VERSION}" \
+    && echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> "${HOME}/.bashrc" \
+    && echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> "${HOME}/.bashrc"  
+
 
 ARG ROOT_PASS="ilovelinux"
 # Note: generate encrypted password with $(openssl passwd -6 tm-admin-example)
