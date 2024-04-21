@@ -44,6 +44,17 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/aws
     /tmp/aws/install &&\
     rm -rf /tmp/aws*
 
+# Install terraform switcher
+# https://tfswitch.warrensbox.com/Install/
+# RUN curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
+COPY install-tfswitch-20240421.sh /tmp/install-tfswitch.sh
+RUN bash /tmp/install-tfswitch.sh 1.0.2
+# aztfexport - https://github.com/Azure/aztfexport - M$ does not have debian version
+# https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/ 
+# 2024-04-16 v0.14.1
+RUN curl -sSL https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/aztfexport_0.14.1_amd64.deb -o /tmp/aztfexport_amd64.deb \
+    && dpkg -i /tmp/aztfexport_amd64.deb
+
 # Install rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
@@ -75,5 +86,6 @@ COPY sudoers-debug /etc/sudoers.d/
 COPY entrypoint* /
 COPY motd /etc/motd
 RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
+WORKDIR "/root"
 
 CMD [ "/usr/bin/env", "bash" ]

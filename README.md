@@ -1,12 +1,14 @@
 # Debug-Container
 
 Container based on Debian with debug tools added. (--platform=linux/amd64)
+Its big :( 4.6GB
 
 - aws-cli
-- az azure cli
+- az azure cli (Using pip --break-system-packages)
 - rust + cargo
-- nodejs nvm
-- ansible
+- nodejs(v20) nvm
+- ansible (Using pip --break-system-packages)
+- terraform -> [tfswitch + aztfexport(2024-04-16 v0.14.1)]
 - network tools: ssh, tcpdump, ngrep, dnsutils(dig), etc.
 
 ## Usage example: To attach the container to running k8s pod to debug
@@ -23,6 +25,8 @@ Container based on Debian with debug tools added. (--platform=linux/amd64)
     1. attache debug container to existing container e.g. ingress
     ```kubectl debug -n ${NS} ${POD_NAME} -it --image=docker.io/diepes/debug:latest [ --target <ContainerNameInPod> ] -- sh```
     ```` kubectl debug -n tm-infra -it tm-infra-shared-ingress-nginx-controller-797ccc698d-4hmgb --image=debian:stable --target=controller -- bash```
+    1. run local debug container
+    ```docker run --rm -it docker.io/diepes/debug:latest bash```
     1. run aws container
     ```docker run --rm -it amazon/aws-cli --version```
 
@@ -35,3 +39,4 @@ Container based on Debian with debug tools added. (--platform=linux/amd64)
 - rust
 - ssh
 - nvm (nodejs)
+- terraform (tfswitch + aztfexport)
