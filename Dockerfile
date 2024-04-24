@@ -48,7 +48,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/aws
 # https://tfswitch.warrensbox.com/Install/
 # RUN curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
 COPY install-tfswitch-20240421.sh /tmp/install-tfswitch.sh
-RUN bash /tmp/install-tfswitch.sh 1.0.2
+RUN bash /tmp/install-tfswitch.sh 1.0.2 && tfswitch --latest
 # aztfexport - https://github.com/Azure/aztfexport - M$ does not have debian version
 # https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/ 
 # 2024-04-16 v0.14.1
