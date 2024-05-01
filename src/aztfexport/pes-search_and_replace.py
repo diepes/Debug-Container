@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# 2024-05-02 PESmit rename VM, Nic, SqlDB, RG, snapshots, FW rules
 import re
 
 def search_and_replace(file_in, file_out):
@@ -11,9 +12,12 @@ def search_and_replace(file_in, file_out):
     # e.g. 4 .../servers/z-prod-blueprism-sql-01",
     # e.g. 5. "resource_id": "/subscriptions/1156dded-08fd-4348-bb97-e24158d3ad1a/resourceGroups/prod-blueprism-rg"
     # e.g. 6. 		"resource_id": "/subscriptions/1156dded-08fd-4348-bb97-e24158d3ad1a/resourceGroups/prod-blueprism-rg/providers/Microsoft.Sql/servers/z-prod-blueprism-sql-01",
-    pattern_name = r'"resource_id":.+(/virtualMachines/|/networkInterfaces/|/resourceGroups/|/Microsoft.Sql/servers/)(?P<Name>[^"/]+)",'  # Regex pattern to capture virtual machine name
+    pattern_name = r'"resource_id":.+(/virtualMachines/|/Microsoft.Compute/snapshots/|/networkInterfaces/|/resourceGroups/|/Microsoft.Sql/servers/|/Microsoft.Network/privateEndpoints/)(?P<Name>[^"/]+)",'  # Regex pattern to capture virtual machine name
     # e.g. 7 		"resource_id": "/subscriptions/1156dded-08fd-4348-bb97-e24158d3ad1a/resourceGroups/prod-blueprism-rg/providers/Microsoft.Sql/servers/z-prod-blueprism-sql-01/firewallRules/twgadc-public-ips",
-    pattern_ext = r'"resource_id":.+(/virtualMachines/|/Microsoft.Sql/servers/)(?P<Name>[^"/]+)(/extensions/|/firewallRules/)(?P<Ext>[^"]+)",'  # Regex pattern to capture virtual machine name
+    # e.g. 8 "resource_id": "/subscriptions/23ca9af9-8e44-434c-86d5-aa67c56e6896/resourceGroups/dev-blueprism-rg/providers/Microsoft.Sql/servers/z-dev-blueprism-sql-01/databases/z-dev-blueprism-db",
+    # e.g. 9 "resource_id": "/subscriptions/23ca9af9-8e44-434c-86d5-aa67c56e6896/resourceGroups/dev-blueprism-rg/providers/Microsoft.Network/privateEndpoints/blueprismshare",
+	
+    pattern_ext = r'"resource_id":.+(/virtualMachines/|/Microsoft.Sql/servers/)(?P<Name>[^"/]+)(/extensions/|/firewallRules/|/databases/)(?P<Ext>[^"]+)",'  # Regex pattern to capture virtual machine name
     new_lines = []
     for i, line in enumerate(lines):
         if '"resource_id"' in line:
