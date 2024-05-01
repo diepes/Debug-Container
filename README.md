@@ -8,7 +8,7 @@ Its big :( 4.6GB
 - rust + cargo
 - nodejs(v20) nvm
 - ansible (Using pip --break-system-packages)
-- terraform -> [tfswitch + aztfexport(2024-04-16 v0.14.1)]
+- terraform -> [tfswitch + aztfexport(2024-04-16 v0.14.1) + shell scripts]
 - network tools: ssh, tcpdump, ngrep, dnsutils(dig), etc.
 
 ## Usage example: To attach the container to running k8s pod to debug
