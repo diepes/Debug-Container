@@ -5,7 +5,7 @@ echo "#$0 installing openssh-server and allowing root ssh ..."
 #apt-get update 
 apt-get install -y openssh-server
 mkdir /var/run/sshd
-echo "root:${root_password:-Passw0rd}" | chpasswd
+echo "root:${root_password:-P@ssw0rdRRR}" | chpasswd
 sed -i 's/^.*PermitRootLogin .*$/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 # SSH login fix. Otherwise user is kicked off after login
