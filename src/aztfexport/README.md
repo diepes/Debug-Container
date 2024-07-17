@@ -5,20 +5,24 @@ Shell scripts to run aztfexport tool to create terraform main.tf and imports fro
 ## How to import
 
 1. Create tfimport dir, and add remotestate.tf to point to TF cloud.
-1. Update pes-aztfexport.sh with correct Subscription and RG
-1. Run ```./pes-docker-aztfexport.sh``` (Container env with TF etc.)
-   - tfswitch to install terraform in container
+1. run the debug container ```docker run -it  -v $PWD:/root/tf:ro -v $PWD/aztf_out:/root/tf/aztf_out diepes/debug```
+   - this will mount the local git volume/dir to ./tf in container.
+   - NOTE: Container env with TF etc.
+1. In container update  ```pes-aztfexport.sh``` to repo with correct Subscription and RG
+   - ```vim.tiny /usr/local/bin/pes-aztfexport.sh```
+1. Run ```./pes-docker-aztfexport.sh```
 1. In container login
-   - az login --use-device-code
-   - web auth
+   - ```tfswitch```` to install terraform in container
+   - ```az login --use-device-code```
+     - web auth
    - cd tf
 1. In container do import into ./aztf_out
    1. aztfexport create Map with names to import
-      ```./pes-aztfexport.sh 2```
+      ```~/tf/aztf_out/:  pes-aztfexport.sh query```
    2. rename names from gen-123 to resource names
       ```./pes-search_and_replace.py```
-   3. copy ./aztf_out/aztfexportResourceMapping.json to .. out of aztf_out
+   3. ```cp ~/tf/aztf_out/aztfexportResourceMapping.json ~/azTfExpResMapIn.json```  (out of aztf_out)
    4. run aztfexport to use the new map and do the actual export, creating import.tf and main.tf
-      ```./pes-aztfexport.sh 3```
+      ```~/tf:  ./pes-aztfexport.sh map```
 1. In "Microsoft Azure Export for Terraform"
    - "s" save aztf_out/aztfexportResourceMapping.json

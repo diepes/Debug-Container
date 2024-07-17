@@ -48,7 +48,7 @@ set +x
 echo; echo "# next './pes-search_and_replace.py' then 'mv to parent folder. then './pes-aztfexport.sh map' next ..."
 
 elif [[ "$1" == "map" ]]; then
-map_file="./aztfexportResourceMapping.json.out"
+map_file="../azTfExpResMapIn.json"
 echo "#3 aztfexport mapping-file read ... '$map_file' " ; sleep 2;
 
 aztfexport mapping-file \

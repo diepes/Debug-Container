@@ -131,3 +131,4 @@ dmypy.json
 # Snyk & vscode
 .dccache
 .vscode
+.DS_Store
