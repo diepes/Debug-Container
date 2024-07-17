@@ -19,10 +19,11 @@ Shell scripts to run aztfexport tool to create terraform main.tf and imports fro
 1. In container do import into ./aztf_out
    1. aztfexport create Map with names to import
       ```~/tf/aztf_out/:  pes-aztfexport.sh query```
+      - "s" save aztf_out/aztfexportResourceMapping.json
    2. rename names from gen-123 to resource names
       ```./pes-search_and_replace.py```
-   3. ```cp ~/tf/aztf_out/aztfexportResourceMapping.json ~/azTfExpResMapIn.json```  (out of aztf_out)
+      - remove unused
+   3. ```cp ~/tf/aztf_out/aztfexportResourceMapping.json ~/azTfExpResMapIn.json```  (out of aztf_out into /root/)
    4. run aztfexport to use the new map and do the actual export, creating import.tf and main.tf
       ```~/tf:  ./pes-aztfexport.sh map```
-1. In "Microsoft Azure Export for Terraform"
-   - "s" save aztf_out/aztfexportResourceMapping.json
+1. Result: main.tf
