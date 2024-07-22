@@ -9,7 +9,7 @@ RUN apt-get update \
         iproute2 dnsutils iputils-ping telnet \
         procps \
         less \
-        python3 python3-pip \
+        python3 python3-venv python3-dev \
         openssh-server ssh-client \
         pv \
         sudo \
@@ -23,20 +23,29 @@ RUN apt-get update \
     && echo "# apt done." \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
 
+    # Create python venv
+ENV VIRTUAL_ENV=/opt/venv
+# ENV VIRTUAL_ENV=${HOME}/venv/
+RUN mkdir -p ${VIRTUAL_ENV}
+# create venv
+RUN python3 -m venv ${VIRTUAL_ENV}
+ENV PATH="${VIRTUAL_ENV}/bin:$PATH"
+
 # Install ansible
-RUN pip3 install --break-system-packages --upgrade \
-            pip virtualenv \
-    && pip3 install --break-system-packages \
-            pykerberos pywinrm[kerberos] pywinrm requests
-RUN pip3 install --break-system-packages \
-            jmespath
+RUN pip install pykerberos 
+RUN pip install pywinrm[kerberos] pywinrm requests
+RUN pip install jmespath
 
 # Install Azure cli and ansible modules
-RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb |  bash
 
-RUN pip3 install --break-system-packages ansible &&\
-    ansible-galaxy collection install azure.azcollection --force &&\
-    pip3 install --break-system-packages -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt
+RUN pip install ansible
+RUN ansible-galaxy collection install azure.azcollection --force
+#
+# # Debug azure.azcollection requirements with --progress=plain
+# RUN ls -al ${HOME}/.ansible/collections/
+# RUN ls -al         ${HOME}/.ansible/collections/ansible_collections/azure/azcollection/
+RUN pip install -r ${HOME}/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt
 
 # Install AWS cli
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip" &&\
