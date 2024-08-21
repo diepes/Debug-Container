@@ -51,10 +51,10 @@ elif [[ "$1" == "query" ]]; then
         --subscription-id="$AZTFEXPORT_SUBSCRIPTION_ID" \
         --provider-name="azurerm" \
         --provider-version="3.99.0" \
-        --non-interactive="true" \
         --generate-mapping-file="false" \
         --generate-import-block="false" \
-        -n "resourceGroup =~ '$AZTFEXPORT_RG' and ( type contains 'Microsoft.Network' or type contains 'Microsoft.Compute/virtualMachines' or type contains 'azurerm_resource_group' )"
+        --non-interactive="true" \
+        "resourceGroup =~ '$AZTFEXPORT_RG' and ( type contains 'Microsoft.Network' or type contains 'Microsoft.Compute/virtualMachines' or type contains 'azurerm_resource_group' )"
     # Notes: Just 'Microsoft.Compute' includes snapshots
     rc=$?
     set +x
