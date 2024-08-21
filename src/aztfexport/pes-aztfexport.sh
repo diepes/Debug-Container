@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # WARN: !! aztfexport ask's and then deletes directory where you run it.
 set -eu
-version="1.0-20240501"
+version="1.1-20240821"
+# 2024-08-21 v1.1 Add env vars for subscription and resource-group.
 # 2024-05-01 v1.0 Shell scripts to run aztfexport and create terraform templates.
 #
-AZTFEXPORT_SUBSCRIPTION_ID="<..>"
-AZTFEXPORT_RG="dev-rg"
+AZTFEXPORT_SUBSCRIPTION_ID="${AZTFEXPORT_SUBSCRIPTION_ID}"
+AZTFEXPORT_RG="${AZTFEXPORT_RG}"
 #
 
 echo " Logged in with:  az login --use-device-code"
