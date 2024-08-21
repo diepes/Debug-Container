@@ -34,7 +34,7 @@ Its big :( 4.6GB
            export AZTFEXPORT_SUBSCRIPTION_ID="<< SUB >>"
            export AZTFEXPORT_RG="<< RG >>"
 
-           docker run -it -rm \
+           docker run -it --rm --platform=linux/amd64 \
                --volume ${PWD}:/root/tf:ro \
                --volume ${PWD}/aztf_out:/root/tf/aztf_out \
                --env AZTFEXPORT_RG="${AZTFEXPORT_RG}" \
