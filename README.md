@@ -31,11 +31,14 @@ Its big :( 4.6GB
     ```docker run --rm -it amazon/aws-cli --version```
     1. Use container for aztfexport to create terraform config
 
-           docker run -it \
+           export AZTFEXPORT_SUBSCRIPTION_ID="<< SUB >>"
+           export AZTFEXPORT_RG="<< RG >>"
+
+           docker run -it -rm \
                --volume ${PWD}:/root/tf:ro \
                --volume ${PWD}/aztf_out:/root/tf/aztf_out \
-               --env AZTFEXPORT_RG="\${AZTFEXPORT_RG}" \
-               --env AZTFEXPORT_SUBSCRIPTION_ID="\${AZTFEXPORT_SUBSCRIPTION_ID}" \
+               --env AZTFEXPORT_RG="${AZTFEXPORT_RG}" \
+               --env AZTFEXPORT_SUBSCRIPTION_ID="${AZTFEXPORT_SUBSCRIPTION_ID}" \
                --name tfimport \
                diepes/debug
 
