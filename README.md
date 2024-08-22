@@ -29,6 +29,8 @@ Its big :( 4.6GB
     ```docker run --rm -it docker.io/diepes/debug:latest bash```
     1. run aws container
     ```docker run --rm -it amazon/aws-cli --version```
+    1. run debug container with ssh login
+       - add --env root_password="xyzzz" --entrypoint="/entrypoint-sshd.sh"
     1. Use container for aztfexport to create terraform config
 
            export AZTFEXPORT_SUBSCRIPTION_ID="<< SUB >>"
