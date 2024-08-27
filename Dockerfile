@@ -100,5 +100,5 @@ COPY motd /etc/motd
 RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' >> /etc/bash.bashrc
 WORKDIR "/root"
 
-ENTRYPOINT [ "/entrypoint-default.sh" ]
+# ENTRYPOINT [ "/entrypoint-default.sh" ]
 CMD [ "/usr/bin/env", "bash" ]
