@@ -9,4 +9,4 @@ else
     exec "$@"
 fi
 
-echo "# entrypoint-default.sh TheEND."
+echo "# entrypoint-default.sh The END."
