@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # WARN: !! aztfexport ask's and then deletes directory where you run it.
 set -eu
-version="1.2-20240821"
+version="1.3-20250416"
+# 2025-04-16 v1.3 Update version tf 1.11.0  and  aztfexport 0.17.1
 # 2024-08-21 v1.2 Add pes-search_and_replace.py to rename aztfexportResourceMapping.json
 # 2024-08-21 v1.1 Add env vars for subscription and resource-group.
 # 2024-05-01 v1.0 Shell scripts to run aztfexport and create terraform templates.
@@ -16,7 +17,7 @@ if [[ -z "${1+NoValue}" ]]; then
     exit 1
 fi
 #
-tf_version="1.9.3"
+tf_version="1.11.0"
 echo "# switch to terraform version: $tf_version"
 tfswitch $tf_version
 echo; sleep 2;
