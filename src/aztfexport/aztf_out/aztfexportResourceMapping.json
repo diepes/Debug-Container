@@ -1,0 +1,222 @@
+{
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/disks/z-prod-wlfa-datadisk-01-0": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/disks/z-prod-wlfa-datadisk-01-0",
+		"resource_type": "azurerm_managed_disk",
+		"resource_name": "z-prod-wlfa-datadisk-01-0"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/snapshots/z-prod-wlfa-datadisk-01-0_scsi_0_939383_GXMD_96cee2": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/snapshots/z-prod-wlfa-datadisk-01-0_scsi_0_939383_GXMD_96cee2",
+		"resource_type": "azurerm_snapshot",
+		"resource_name": "z-prod-wlfa-datadisk-01-0_scsi_0_939383_gxmd_96cee2"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/snapshots/z-prod-wlfa-osdisk-01_ide_0_939383_GXMD_96cee2": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/snapshots/z-prod-wlfa-osdisk-01_ide_0_939383_GXMD_96cee2",
+		"resource_type": "azurerm_snapshot",
+		"resource_name": "z-prod-wlfa-osdisk-01_ide_0_939383_gxmd_96cee2"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/snapshots/z-prod-wlfw-osdisk-01_ide_0_939383_GXMD_e25c56": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/snapshots/z-prod-wlfw-osdisk-01_ide_0_939383_GXMD_e25c56",
+		"resource_type": "azurerm_snapshot",
+		"resource_name": "z-prod-wlfw-osdisk-01_ide_0_939383_gxmd_e25c56"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/MDE.Windows": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/MDE.Windows",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfa-01_mde-windows"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/newrelic-infra-windows": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/newrelic-infra-windows",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfa-01_newrelic-infra-windows"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/MDE.Windows": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/MDE.Windows",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfw-01_mde-windows"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/newrelic-infra-windows": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/PROD-LASERFICHE-RG/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/newrelic-infra-windows",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfw-01_newrelic-infra-windows"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "prod-laserfiche-rg"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/snapshots/z-prod-wlfw-osdisk-01_ITH-37038_08042025_2036": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/snapshots/z-prod-wlfw-osdisk-01_ITH-37038_08042025_2036",
+		"resource_type": "azurerm_snapshot",
+		"resource_name": "z-prod-wlfw-osdisk-01_ith-37038_08042025_2036"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01",
+		"resource_type": "azurerm_windows_virtual_machine",
+		"resource_name": "z-prod-wlfa-01"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/dataDisks/z-prod-wlfa-datadisk-01-0": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/dataDisks/z-prod-wlfa-datadisk-01-0",
+		"resource_type": "azurerm_virtual_machine_data_disk_attachment",
+		"resource_name": "res-11"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfa-01_azuremonitorwindowsagent"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/DependencyAgentWindows": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/DependencyAgentWindows",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfa-01_dependencyagentwindows"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/z-prod-wlfa-01-addtodomain": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/z-prod-wlfa-01-addtodomain",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfa-01_addtodomain"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/z-prod-wlfa-01-psscript": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfa-01/extensions/z-prod-wlfa-01-psscript",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfa-01_psscript"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01",
+		"resource_type": "azurerm_windows_virtual_machine",
+		"resource_name": "z-prod-wlfw-01"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfw-01_azuremonitorwindowsagent"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/DependencyAgentWindows": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/DependencyAgentWindows",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfw-01_dependencyagentwindows"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/Microsoft.Insights.VMDiagnosticsSettings": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/Microsoft.Insights.VMDiagnosticsSettings",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfw-01_microsoft-insights-vmdiagnosticssettings"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/z-prod-wlfw-01-addtodomain": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/z-prod-wlfw-01-addtodomain",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfw-01_addtodomain"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/z-prod-wlfw-01-psscript": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Compute/virtualMachines/z-prod-wlfw-01/extensions/z-prod-wlfw-01-psscript",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "z-prod-wlfw-01_psscript"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkInterfaces/z-prod-wlfa-nic-01": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkInterfaces/z-prod-wlfa-nic-01",
+		"resource_type": "azurerm_network_interface",
+		"resource_name": "z-prod-wlfa-nic-01"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkInterfaces/z-prod-wlfw-nic-01": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkInterfaces/z-prod-wlfw-nic-01",
+		"resource_type": "azurerm_network_interface",
+		"resource_name": "z-prod-wlfw-nic-01"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg",
+		"resource_type": "azurerm_network_security_group",
+		"resource_name": "res-24"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-aad-out-10-18-137-32-27-v11": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-aad-out-10-18-137-32-27-v11",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-25"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-healthprobe-in-10-18-137-32-27-v11": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-healthprobe-in-10-18-137-32-27-v11",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-26"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-internal-in-10-18-137-32-27-v11": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-internal-in-10-18-137-32-27-v11",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-27"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-internal-out-10-18-137-32-27-v11": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-internal-out-10-18-137-32-27-v11",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-28"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-onedsc-out-10-18-137-32-27-v11": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-onedsc-out-10-18-137-32-27-v11",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-29"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-optional-azure-out-10-18-137-32-27": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-optional-azure-out-10-18-137-32-27",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-30"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-strg-p-out-10-18-137-32-27-v11": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-strg-p-out-10-18-137-32-27-v11",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-31"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-strg-s-out-10-18-137-32-27-v11": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-strg-s-out-10-18-137-32-27-v11",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-32"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/allow_inbound": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/allow_inbound",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-33"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/deny_all_inbound": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/deny_all_inbound",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-34"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/deny_all_outbound": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Network/networkSecurityGroups/z-prod-nl-sqlmi-lf-nsg/securityRules/deny_all_outbound",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-35"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01",
+		"resource_type": "azurerm_mssql_managed_instance",
+		"resource_name": "res-36"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/administrators/ActiveDirectory": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/administrators/ActiveDirectory",
+		"resource_type": "azurerm_mssql_managed_instance_active_directory_administrator",
+		"resource_name": "res-37"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/databases/LFDirectory": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/databases/LFDirectory",
+		"resource_type": "azurerm_mssql_managed_database",
+		"resource_name": "res-40"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/databases/LFRepository": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/databases/LFRepository",
+		"resource_type": "azurerm_mssql_managed_database",
+		"resource_name": "res-47"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/databases/LFWorkflow": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/databases/LFWorkflow",
+		"resource_type": "azurerm_mssql_managed_database",
+		"resource_name": "res-54"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/encryptionProtector/current": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/encryptionProtector/current",
+		"resource_type": "azurerm_mssql_managed_instance_transparent_data_encryption",
+		"resource_name": "res-62"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/securityAlertPolicies/Default": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/securityAlertPolicies/Default",
+		"resource_type": "azurerm_mssql_managed_instance_security_alert_policy",
+		"resource_name": "res-64"
+	},
+	"/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/vulnerabilityAssessments/Default": {
+		"resource_id": "/subscriptions/fcanonanon-1616-c7c7-d5d5-anonanonf8/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/vulnerabilityAssessments/Default",
+		"resource_type": "azurerm_mssql_managed_instance_vulnerability_assessment",
+		"resource_name": "res-66"
+	}
+}

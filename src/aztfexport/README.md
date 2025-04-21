@@ -2,6 +2,10 @@
 
 Shell scripts to run aztfexport tool to create terraform main.tf and imports from actual Azure RG
 
+## Run python test
+
+- ```python3 -m unittest test-pes_search_and_replace.py```
+
 ## How to import
 
 1. (Optional) Create tfimport dir, and add remotestate.tf to point to TF cloud.
@@ -21,7 +25,7 @@ Shell scripts to run aztfexport tool to create terraform main.tf and imports fro
       ```~/tf $  pes-aztfexport.sh query```
       - "s" save aztf_out/aztfexportResourceMapping.json
    2. rename names from gen-123 to resource names
-      ```~/tf $  pes-search_and_replace.py```
+      ```~/tf $  pes_search_and_replace.py```
       - remove unused
    3. ```~/tf $  cp ~/tf/aztf_out/aztfexportResourceMapping.json.out ~/azTfExpResMapIn.json```  (out of aztf_out into /root/)
    4. run aztfexport to use the new map and do the actual export, creating import.tf and main.tf

@@ -3,12 +3,13 @@
 set -eu
 version="1.3-20250416"
 # 2025-04-16 v1.3 Update version tf 1.11.0  and  aztfexport 0.17.1
-# 2024-08-21 v1.2 Add pes-search_and_replace.py to rename aztfexportResourceMapping.json
+# 2024-08-21 v1.2 Add pes_search_and_replace.py to rename aztfexportResourceMapping.json
 # 2024-08-21 v1.1 Add env vars for subscription and resource-group.
 # 2024-05-01 v1.0 Shell scripts to run aztfexport and create terraform templates.
 #
 AZTFEXPORT_SUBSCRIPTION_ID="${AZTFEXPORT_SUBSCRIPTION_ID}"
 AZTFEXPORT_RG="${AZTFEXPORT_RG}"
+AZURERM="4.26.0
 #
 echo " Logged in with:  az login --use-device-code"
 az account set --subscription "$AZTFEXPORT_SUBSCRIPTION_ID"
@@ -34,7 +35,7 @@ if [[ "$1" == "rg" ]]; then
         --output-dir="$out_dir" \
         --subscription-id="$AZTFEXPORT_SUBSCRIPTION_ID" \
         --provider-name="azurerm" \
-        --provider-version="3.99.0" \
+        --provider-version="$AZURERM" \
         --non-interactive="true" \
         --generate-mapping-file="false" \
         --generate-import-block="false" \
@@ -51,7 +52,7 @@ elif [[ "$1" == "query" ]]; then
         --output-dir="$out_dir" \
         --subscription-id="$AZTFEXPORT_SUBSCRIPTION_ID" \
         --provider-name="azurerm" \
-        --provider-version="3.99.0" \
+        --provider-version="$AZURERM" \
         --generate-mapping-file="false" \
         --generate-import-block="false" \
         --non-interactive="true" \
@@ -70,7 +71,7 @@ elif [[ "$1" == "map" ]]; then
         --output-dir="$out_dir" \
         --subscription-id="$AZTFEXPORT_SUBSCRIPTION_ID" \
         --provider-name="azurerm" \
-        --provider-version="3.99.0" \
+        --provider-version="$AZURERM" \
         --generate-import-block="true" \
         --non-interactive="true" \
         $map_file
@@ -85,7 +86,7 @@ if [[ "$1" == "rg" ]] || [[ "$1" == "query" ]]; then
     echo "# rename file in ./aztf_out/aztfexportResourceMapping.json to ./aztf_out/aztfexportResourceMapping.json.out"
     echo ; sleep 2;
     # rename file in ./aztf_out/aztfexportResourceMapping.json to ./aztf_out/aztfexportResourceMapping.json.out
-    pes-search_and_replace.py
+    pes_search_and_replace.py
     echo
     echo "# cp renamed ./aztf_out/aztfexportResourceMapping.json.out to ../azTfExpResMapIn.json"
     sleep 2;

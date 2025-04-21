@@ -1,4 +1,20 @@
-FROM --platform=linux/amd64 docker.io/debian:stable-slim
+# Define the platform as a build argument with a default value
+ARG PLATFORM=linux/amd64
+
+# Stage 1: Build the Rust executable
+FROM --platform=${PLATFORM} rust:1.85.1-slim AS builder
+WORKDIR /app
+# Copy the Rust project files into the container
+COPY ./src/rust_aztfexport_rename /app
+# Run tests to ensure the code is correct
+RUN cargo test --release --locked --all-targets --all-features
+# Build the Rust project in release mode
+RUN cargo build --release
+
+# Stage 2: Final image
+# Use the platform argument in the FROM instruction
+FROM --platform=${PLATFORM} docker.io/debian:stable-slim
+
 RUN apt-get update \
     && apt-get install -y \
         curl \
@@ -75,6 +91,8 @@ RUN curl -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/st
 
 # Install rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+# Copy the Rust binary from the builder stage
+COPY --from=builder /app/target/release/rust_aztfexport_rename /usr/local/bin/rust_aztfexport_rename
 
 # Install nodejs nvm node version manager
 ENV NODE_VERSION=22
