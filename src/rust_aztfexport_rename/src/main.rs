@@ -26,6 +26,8 @@ fn main() {
             panic!("Exiting due to error");
         }
     };
+    // call delete_resources
+    res_ren_del::delete_unwanted(&mut tf_resources);
     // call rename_resources
     res_ren_del::rename_resources(&mut tf_resources);
 

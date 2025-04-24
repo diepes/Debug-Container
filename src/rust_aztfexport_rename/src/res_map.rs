@@ -10,6 +10,7 @@ pub struct Resource {
     pub resource_type: String,
     pub resource_name: String,
     #[serde(skip_serializing)] // Field used only for testing
+    #[allow(dead_code)] // Suppress warning for unused field used in tests
     pub resource_name_test: Option<String>,
 }
 

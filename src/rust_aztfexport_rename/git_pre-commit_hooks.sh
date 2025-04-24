@@ -5,10 +5,12 @@
 
 # Path to the Cargo.toml file
 CARGO_TOML="src/rust_aztfexport_rename/Cargo.toml"
+CARGO_LOCK="" # Update at end if needed
 
 # Check if any files in the src/rust_aztfexport_rename folder have changed
 if git diff --cached --name-only | grep -q "^src/rust_aztfexport_rename/"; then
     echo "Detected changes in src/rust_aztfexport_rename. Incrementing version..."
+    CARGO_LOCK="src/rust_aztfexport_rename/Cargo.lock"
 
     # Extract the current version from Cargo.toml
     CURRENT_VERSION=$(grep '^version' "$CARGO_TOML" | sed -E 's/version = "(.*)"/\1/')
@@ -30,11 +32,6 @@ if git diff --cached --name-only | grep -q "^src/rust_aztfexport_rename/"; then
     # Add the updated Cargo.toml to the commit
     git add "$CARGO_TOML"
 
-    # Also add the Cargo.lock file to the commit
-    if [ -f "src/rust_aztfexport_rename/Cargo.lock" ]; then
-        sleep 1
-        git add "src/rust_aztfexport_rename/Cargo.lock"
-    fi
 fi
 
 
@@ -75,3 +72,10 @@ sed -i '' "s|$CURRENT_VERSION ([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\})|$NEW_VERSION_ST
 git add "$README_FILE"
 
 echo "Updated motd version from $CURRENT_VERSION to $NEW_VERSION_STRING in $MOTD_FILE"
+    
+# Also add the Cargo.lock file to the commit
+# It might be updated if the Cargo.toml file was modified
+if [ "$CARGO_LOCK" != "" ]; then
+        sleep 1
+        git add "$CARGO_LOCK"
+fi

@@ -1,4 +1,4 @@
-use crate::res_map::{ResourceMapping, Resource};
+use crate::res_map::{Resource, ResourceMapping};
 
 // function to rename resources in ResourceMapping, based on parsed values of resource_id updating resource_name.
 pub fn rename_resources(resource_mapping: &mut ResourceMapping) {
@@ -31,9 +31,48 @@ pub fn new_name(resource: &str) -> Option<String> {
         "Expected first part to be 'resourceGroups' not '{}' in '{}'",
         parts[3], resource
     );
+    // test if parts[7] is one of a list of strings if len(parts) = 10
+    let base_name: Option<&str>;
+    if parts.len() > 9 {
+        let valid_names = vec![
+            "managedInstances",
+            "networkSecurityGroups",
+            "virtualMachines",
+        ];
+        assert!(
+            valid_names.contains(&parts[7]),
+            "Invalid name: {} {}",
+            parts[7],
+            resource
+        );
+        base_name = Some(parts[8]);
+    } else {
+        base_name = None;
+    }
 
     if parts.len() > 0 {
-        Some(parts[parts.len() - 1].to_string())
+        let mut newname = parts[parts.len() - 1].to_string();
+        // Replace all "." with "_"
+        newname = newname.replace('.', "_");
+        // Check if the resource name is not empty
+        assert!(!newname.is_empty(), "Resource name is empty {}", resource);
+
+        if let Some(base_name) = base_name {
+            newname = format!("{}__{}", base_name, newname);
+        }
+
+        // Check that the resource name does not contain "." or "/"
+        assert!(
+            !newname.contains('.'),
+            "Resource name contains '.' {}",
+            newname
+        );
+        assert!(
+            !newname.contains('/'),
+            "Resource name contains '/' {}",
+            newname
+        );
+        Some(newname)
     } else {
         None
     }
@@ -44,8 +83,9 @@ fn delete_check(_key: &str, resource: &Resource) -> bool {
         // "Microsoft.Sql/managedInstances/databases",
         // "Microsoft.Sql/servers/databases",
         // "Microsoft.Sql/servers/elasticPools",
-        // "Microsoft.Sql/servers",
-        // "Microsoft.Sql/managedInstances",
+        "/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-",
+        "Microsoft.Insights.VMDiagnosticsSettings",
+        "/extensions/MDE.Windows",
         "/encryptionProtector/current",
         "/vulnerabilityAssessments/Default",
         "/securityAlertPolicies/Default",
@@ -65,8 +105,7 @@ pub fn delete_unwanted(resources: &mut ResourceMapping) {
     let mut keys_to_remove = Vec::new();
     for (k, r) in resources.iter() {
         // Check if the resource type contains value in resource_types_to_delete
-        if delete_check(&k,r)
-        {
+        if delete_check(&k, r) {
             // Collect the resource ID to be removed
             println!("Marking resource for deletion: {}", r.resource_id);
             keys_to_remove.push(r.resource_id.clone());
@@ -88,7 +127,7 @@ mod tests {
         let resource_id = "/subscriptions/fcdddddd-1111-4444-9999-699999999998/resourceGroups/prod-laserfiche-rg/providers/Microsoft.Sql/managedInstances/z-prod-nl-sqlmi-lf-01/databases/LFWorkflow";
 
         // Expected new name
-        let expected_name = "LFWorkflow";
+        let expected_name = "z-prod-nl-sqlmi-lf-01__LFWorkflow";
 
         // Call the function and assert the result
         let result = new_name(resource_id).expect("Failed to extract new name");
@@ -97,7 +136,7 @@ mod tests {
             "The new name did not match the expected value"
         );
     }
-    fn read_test_resource_json(file_path: &str) -> ResourceMapping {    
+    fn read_test_resource_json(file_path: &str) -> ResourceMapping {
         // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
         let file = std::fs::File::open(file_path).expect("Failed to open file");
         let reader = std::io::BufReader::new(file);
@@ -113,7 +152,12 @@ mod tests {
         // loop through the resource mapping and check if .resource_name_test is DELETE for all resources to be deleted
         for (_k, r) in resource_mapping.iter() {
             if delete_check(&r.resource_id, r) {
-                assert_eq!(r.resource_name_test, Some("DELETE".to_string()), "Test resource not marked for deletion: name: {}", r.resource_name);
+                assert_eq!(
+                    r.resource_name_test,
+                    Some("DELETE".to_string()),
+                    "Test resource not marked for deletion: name: {}",
+                    r.resource_name
+                );
             }
         }
     }
@@ -122,7 +166,7 @@ mod tests {
     fn test_new_name_file() {
         // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
         let file_path = "tests/202504_aztfexport_rg/aztfexportResourceMapping_test2.json";
-        let mut resource_mapping: ResourceMapping = read_test_resource_json(file_path); 
+        let mut resource_mapping: ResourceMapping = read_test_resource_json(file_path);
         // Remove unwanted resources
         delete_unwanted(&mut resource_mapping);
         // Iterate through the resource mapping
@@ -133,7 +177,11 @@ mod tests {
                 // if we have both a rename and test name they should be the same
                 (Some(gen_name), Some(test_name)) => {
                     // Update the resource name
-                    assert_eq!(gen_name, test_name);
+                    assert_eq!(
+                        gen_name, test_name,
+                        "Resource name does not match: {} {} {}",
+                        gen_name, test_name, r.resource_id
+                    );
                 }
                 (None, Some(_)) => {
                     // Handle the case where the resource ID does not match
