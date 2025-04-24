@@ -40,6 +40,7 @@ fi
 
 # ./motd minor and date update
 MOTD_FILE="motd"
+README_FILE="README.md"
 
 # Get current date in YYYY-MM-DD format
 NEW_DATE=$(date +%Y-%m-%d)
@@ -70,5 +71,7 @@ NEW_VERSION_STRING="$NEW_VERSION ($NEW_DATE)"
 # Use sed with macOS-compatible syntax (empty backup extension)
 sed -i '' "s|$CURRENT_VERSION ([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\})|$NEW_VERSION_STRING|g" "$MOTD_FILE"
 git add "$MOTD_FILE"
+sed -i '' "s|$CURRENT_VERSION ([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\})|$NEW_VERSION_STRING|g" "$README_FILE"
+git add "$README_FILE"
 
 echo "Updated motd version from $CURRENT_VERSION to $NEW_VERSION_STRING in $MOTD_FILE"
