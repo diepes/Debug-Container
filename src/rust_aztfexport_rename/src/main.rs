@@ -1,9 +1,9 @@
 mod clap;
-mod resource_map;
-mod resource_rename;
+mod res_map;
+mod res_ren_del;
 
 use clap::Cli;
-use resource_map::read_resource_mapping;
+use res_map::read_resource_mapping;
 
 fn main() {
     // Parse command-line arguments
@@ -27,10 +27,10 @@ fn main() {
         }
     };
     // call rename_resources
-    resource_rename::rename_resources(&mut tf_resources);
+    res_ren_del::rename_resources(&mut tf_resources);
 
     // Write the resource mapping to the destination file
-    match resource_map::write_resource_mapping(&args.dst, &tf_resources) {
+    match res_map::write_resource_mapping(&args.dst, &tf_resources) {
         Ok(_) => println!("Successfully wrote resource mapping to '{}'", args.dst),
         Err(e) => eprintln!("Failed to write resource mapping to '{}': {}", args.dst, e),
     }

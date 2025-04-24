@@ -9,6 +9,8 @@ pub struct Resource {
     pub resource_id: String,
     pub resource_type: String,
     pub resource_name: String,
+    #[serde(skip_serializing)] // Field used only for testing
+    pub resource_name_test: Option<String>,
 }
 
 // Use IndexMap to preserve order
@@ -89,6 +91,7 @@ mod tests {
                 resource_id: "/subscriptions/test/resourceGroups/test-rg/providers/Microsoft.Compute/disks/test-disk-01".to_string(),
                 resource_type: "azurerm_managed_disk".to_string(),
                 resource_name: "test-disk-01".to_string(),
+                resource_name_test: None,
             },
         );
         resource_mapping.insert(
@@ -97,11 +100,12 @@ mod tests {
                 resource_id: "/subscriptions/test/resourceGroups/test-rg/providers/Microsoft.Compute/snapshots/test-snapshot-01".to_string(),
                 resource_type: "azurerm_snapshot".to_string(),
                 resource_name: "test-snapshot-01".to_string(),
+                resource_name_test: None,
             },
         );
 
         // Define test file paths
-        let test_file_path = "./test_resource_mapping.json";
+        let test_file_path = "./test_resource_mapping_deleteme.json";
 
         // Write the ResourceMapping to a file
         write_resource_mapping(test_file_path, &resource_mapping)
