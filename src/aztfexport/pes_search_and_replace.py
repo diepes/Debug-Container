@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# 2025-04-24 PESmit /!\ replace with rust ./src/rust_aztfexport_rename
 # 2025-04-17 PESmit add python3 testing
 # 2024-08-21 PESmit rename disks "Microsoft.Compute/disks/"
 # 2024-05-02 PESmit rename VM, Nic, SqlDB, RG, snapshots, FW rules

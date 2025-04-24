@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This pre-commit hook updates the minor version in Cargo.toml
+# This pre-commit hook updates the minor version in Cargo.toml and ./motd
 # if there were changes in the src/rust_aztfexport_rename folder
 
 # Path to the Cargo.toml file
@@ -25,7 +25,7 @@ if git diff --cached --name-only | grep -q "^src/rust_aztfexport_rename/"; then
     # Update the version in Cargo.toml
     sed -i.bak -E "s/^version = \".*\"/version = \"$NEW_VERSION_WITH_DATE\"/" "$CARGO_TOML" && rm "$CARGO_TOML.bak"
 
-    echo "Updated version: $CURRENT_VERSION -> $NEW_VERSION"
+    echo "Updated rust version: $CURRENT_VERSION -> $NEW_VERSION"
 
     # Add the updated Cargo.toml to the commit
     git add "$CARGO_TOML"
@@ -36,3 +36,39 @@ if git diff --cached --name-only | grep -q "^src/rust_aztfexport_rename/"; then
         git add "src/rust_aztfexport_rename/Cargo.lock"
     fi
 fi
+
+
+# ./motd minor and date update
+MOTD_FILE="motd"
+
+# Get current date in YYYY-MM-DD format
+NEW_DATE=$(date +%Y-%m-%d)
+
+# Extract the current version line
+VERSION_LINE=$(grep -E "v[0-9]+\.[0-9]+\.[0-9]+ \([0-9]{4}-[0-9]{2}-[0-9]{2}\)" "$MOTD_FILE")
+
+if [ -z "$VERSION_LINE" ]; then
+    echo "Version line not found in $MOTD_FILE"
+    exit 1
+fi
+
+# Extract just the version part (e.g., v0.3.1)
+CURRENT_VERSION=$(echo "$VERSION_LINE" | grep -o "v[0-9]\+\.[0-9]\+\.[0-9]\+")
+
+# Split version into major, minor, patch
+MAJOR=$(echo "$CURRENT_VERSION" | cut -d. -f1 | tr -d 'v')
+MINOR=$(echo "$CURRENT_VERSION" | cut -d. -f2)
+PATCH=$(echo "$CURRENT_VERSION" | cut -d. -f3)
+
+# Increment patch version
+NEW_PATCH=$((PATCH + 1))
+NEW_VERSION="v$MAJOR.$MINOR.$NEW_PATCH"
+
+# Create the new version string
+NEW_VERSION_STRING="$NEW_VERSION ($NEW_DATE)"
+
+# Use sed with macOS-compatible syntax (empty backup extension)
+sed -i '' "s|$CURRENT_VERSION ([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\})|$NEW_VERSION_STRING|g" "$MOTD_FILE"
+git add "$MOTD_FILE"
+
+echo "Updated motd version from $CURRENT_VERSION to $NEW_VERSION_STRING in $MOTD_FILE"

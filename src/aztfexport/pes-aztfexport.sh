@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # WARN: !! aztfexport ask's and then deletes directory where you run it.
 set -eu
-version="1.3-20250416"
+version="1.4-20250424"
+# 2025-04-24 v1.4 Use rust_aztfexport_rename replacing pes_search_and_replace.py
 # 2025-04-16 v1.3 Update version tf 1.11.0  and  aztfexport 0.17.1
 # 2024-08-21 v1.2 Add pes_search_and_replace.py to rename aztfexportResourceMapping.json
 # 2024-08-21 v1.1 Add env vars for subscription and resource-group.
@@ -9,7 +10,7 @@ version="1.3-20250416"
 #
 AZTFEXPORT_SUBSCRIPTION_ID="${AZTFEXPORT_SUBSCRIPTION_ID}"
 AZTFEXPORT_RG="${AZTFEXPORT_RG}"
-AZURERM="4.26.0
+AZURERM="4.26.0"
 #
 echo " Logged in with:  az login --use-device-code"
 az account set --subscription "$AZTFEXPORT_SUBSCRIPTION_ID"
@@ -86,7 +87,7 @@ if [[ "$1" == "rg" ]] || [[ "$1" == "query" ]]; then
     echo "# rename file in ./aztf_out/aztfexportResourceMapping.json to ./aztf_out/aztfexportResourceMapping.json.out"
     echo ; sleep 2;
     # rename file in ./aztf_out/aztfexportResourceMapping.json to ./aztf_out/aztfexportResourceMapping.json.out
-    pes_search_and_replace.py
+    /usr/local/bin/rust_aztfexport_rename --src "./aztf_out/aztfexportResourceMapping.json" --dst "./aztf_out/aztfexportResourceMapping.json.out"
     echo
     echo "# cp renamed ./aztf_out/aztfexportResourceMapping.json.out to ../azTfExpResMapIn.json"
     sleep 2;

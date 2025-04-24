@@ -171,7 +171,7 @@ dependencies = [
 
 [[package]]
 name = "rust_aztfexport_rename"
-version = "0.1.7+20250424"
+version = "0.1.9+20250424"
 dependencies = [
  "clap",
  "indexmap",
