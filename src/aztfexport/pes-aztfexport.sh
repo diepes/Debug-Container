@@ -92,6 +92,7 @@ if [[ "$1" == "rg" ]] || [[ "$1" == "query" ]]; then
     echo "# cp renamed ./aztf_out/aztfexportResourceMapping.json.out to ../azTfExpResMapIn.json"
     sleep 2;
     cp ./aztf_out/aztfexportResourceMapping.json.out ../azTfExpResMapIn.json
+    cp ./aztf_out/aztfexportResourceMapping.json ../azTfExpResMapOriginal.json
     echo "# done. run 'pes-aztfexport.sh map' to create terraform templates next."
     sleep 2;
 fi

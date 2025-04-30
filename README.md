@@ -1,6 +1,6 @@
 # Debug-Container
 
-## Version v0.3.7 (2025-04-24)
+## Version v0.4.0 (2025-04-24)
 
 Container based on Debian with debug tools added. (--platform=linux/amd64)
 Its big :( 4.6GB
