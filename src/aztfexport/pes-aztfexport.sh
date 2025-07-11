@@ -57,7 +57,7 @@ elif [[ "$1" == "query" ]]; then
         --generate-mapping-file="false" \
         --generate-import-block="false" \
         --non-interactive="true" \
-        "resourceGroup =~ '$AZTFEXPORT_RG' and ( type contains 'Microsoft.Network' or type contains 'Microsoft.Compute/virtualMachines' or type contains 'azurerm_resource_group' )"
+        "resourceGroup =~ '$AZTFEXPORT_RG' and ( type contains 'Microsoft.Network' or type contains 'Microsoft.Compute/virtualMachines' or type contains 'azurerm_resource_group' or type contains 'azurerm_arc_machine')"
     # Notes: Just 'Microsoft.Compute' includes snapshots
     rc=$?
     set +x

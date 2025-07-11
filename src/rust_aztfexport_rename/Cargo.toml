@@ -1,6 +1,6 @@
 [package]
 name = "rust_aztfexport_rename"
-version = "0.1.11+20250424"
+version = "0.1.12+20250711"
 edition = "2024"
 
 [dependencies]
@@ -8,4 +8,4 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 # use indexmap rather than hashmap
 indexmap = { version = "1.9", features = ["serde"] }
-clap = { version = "4.2", features = ["derive"] }
+clap = { version = "4.5", features = ["derive"] }

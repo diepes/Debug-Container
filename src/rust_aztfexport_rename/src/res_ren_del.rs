@@ -38,10 +38,11 @@ pub fn new_name(resource: &str) -> Option<String> {
             "managedInstances",
             "networkSecurityGroups",
             "virtualMachines",
+            "machines", // for Arc machines
         ];
         assert!(
             valid_names.contains(&parts[7]),
-            "Invalid name: {} {}",
+            "assert! Invalid name: '{}' {}",
             parts[7],
             resource
         );
@@ -144,8 +145,9 @@ mod tests {
             serde_json::from_reader(reader).expect("Failed to parse JSON");
         resource_mapping
     }
+
     #[test]
-    fn test_delete_unwanted() {
+    fn test_delete_unwanted_02() {
         // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
         let file_path = "tests/202504_aztfexport_rg/aztfexportResourceMapping_test2.json";
         let resource_mapping: ResourceMapping = read_test_resource_json(file_path);
@@ -159,6 +161,30 @@ mod tests {
                     r.resource_name
                 );
             }
+        }
+    }
+
+    #[test]
+    fn test_delete_rename_07() {
+        // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
+        let file_path = "tests/202507_arc_rg/aztfexportResourceMapping.json";
+        let resource_mapping: ResourceMapping = read_test_resource_json(file_path);
+        // loop through the resource mapping and check if .resource_name_test is DELETE for all resources to be deleted
+        for (_k, r) in resource_mapping.iter() {
+            if delete_check(&r.resource_id, r) {
+                assert_eq!(
+                    r.resource_name_test,
+                    Some("DELETE".to_string()),
+                    "Test resource not marked for deletion: name: {}",
+                    r.resource_name
+                );
+            }
+            let new_name = new_name(&r.resource_id);
+            assert!(
+                new_name.is_some(),
+                "New name is None for resource: {}",
+                r.resource_id
+            );
         }
     }
 

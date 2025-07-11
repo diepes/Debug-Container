@@ -1,0 +1,1337 @@
+{
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-530"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-531"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-532"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/CALLISTO": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/CALLISTO",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-534"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/CALLISTO/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/CALLISTO/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-535"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/CALLISTO/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/CALLISTO/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-536"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-538"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-539"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-540"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/NLCHCWDW02DR/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-541"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/T7GMTV1": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/T7GMTV1",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-543"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/T7GMTV1/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/T7GMTV1/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-544"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/T7GMTV1/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/T7GMTV1/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-545"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-547"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P/extensions/AdminCenter": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P/extensions/AdminCenter",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-548"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-549"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH103WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-550"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH107WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH107WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-552"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH107WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH107WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-553"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH107WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH107WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-554"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH110WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH110WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-556"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH110WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH110WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-557"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH110WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH110WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-558"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WSVR02P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WSVR02P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-560"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WSVR02P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WSVR02P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-561"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WSVR02P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WSVR02P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-562"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-564"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-565"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH117WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-566"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH120WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH120WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-568"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH120WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH120WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-569"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH120WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH120WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-570"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH137WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH137WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-572"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH137WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH137WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-573"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH137WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH137WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-574"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH141WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH141WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-576"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH141WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH141WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-577"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH141WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH141WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-578"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH145WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH145WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-580"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH145WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH145WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-581"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH145WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH145WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-582"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH148WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH148WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-584"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH148WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH148WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-585"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH148WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH148WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-586"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH149WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH149WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-588"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH149WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH149WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-589"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH149WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH149WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-590"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH154WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH154WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-592"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH154WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH154WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-593"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH154WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH154WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-594"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH155WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH155WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-596"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH155WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH155WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-597"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH155WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH155WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-598"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH157WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH157WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-600"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH157WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH157WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-601"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH157WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH157WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-602"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH161WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH161WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-604"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH161WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH161WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-605"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH161WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH161WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-606"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH169WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH169WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-608"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH169WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH169WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-609"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH169WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH169WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-610"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH177WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH177WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-612"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH177WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH177WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-613"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH177WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH177WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-614"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH178WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH178WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-616"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH178WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH178WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-617"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH178WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH178WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-618"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH179WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH179WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-620"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH179WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH179WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-621"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH179WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH179WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-622"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH182WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH182WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-624"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH182WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH182WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-625"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH182WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH182WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-626"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH183WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH183WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-628"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH183WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH183WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-629"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH183WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH183WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-630"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH184WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH184WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-632"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH184WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH184WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-633"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH184WVSS01P/extensions/WindowsPatchExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH184WVSS01P/extensions/WindowsPatchExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-634"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH188WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH188WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-636"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH188WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH188WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-637"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH188WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH188WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-638"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH189WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH189WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-640"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH189WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH189WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-641"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH189WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH189WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-642"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH190WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH190WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-644"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH190WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH190WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-645"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH190WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH190WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-646"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH191WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH191WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-648"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH191WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH191WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-649"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH191WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH191WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-650"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH192WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH192WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-652"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH192WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH192WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-653"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH192WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH192WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-654"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH202WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH202WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-656"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH202WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH202WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-657"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH202WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH202WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-658"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH221WVSS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH221WVSS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-660"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH221WVSS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH221WVSS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-661"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH221WVSS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH221WVSS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-662"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH419WVSS01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH419WVSS01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-664"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH419WVSS01D/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH419WVSS01D/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-665"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH419WVSS01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH419WVSS01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-666"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH523WVSS01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH523WVSS01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-668"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH523WVSS01D/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH523WVSS01D/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-669"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH523WVSS01D/extensions/WindowsPatchExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WH523WVSS01D/extensions/WindowsPatchExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-670"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL01DR": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL01DR",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-672"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL01DR/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL01DR/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-673"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL01DR/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL01DR/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-674"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-676"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-677"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-678"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DK/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-679"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-681"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-682"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-683"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DN/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-684"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-686"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-687"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-688"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-689"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRD/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-690"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-692"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-693"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-694"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-695"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-696"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/WindowsPatchExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRF/extensions/WindowsPatchExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-697"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRH": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRH",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-699"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRH/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRH/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-700"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRH/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRH/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-701"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-703"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-704"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-705"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRI/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-706"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-708"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-709"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-710"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRK/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-711"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-713"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-714"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-715"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRM/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-716"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRN": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRN",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-718"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRN/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRN/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-719"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRN/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRN/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-720"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-722"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-723"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-724"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRQ/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-725"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-727"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-728"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-729"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL02DRT/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-730"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL03DR": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL03DR",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-732"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL03DR/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL03DR/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-733"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL03DR/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL03DR/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-734"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-736"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-737"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-738"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL05D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-739"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-741"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-742"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-743"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-744"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06DR": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06DR",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-746"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06DR/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06DR/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-747"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06DR/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLVSQL06DR/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-748"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWACTV02D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWACTV02D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-749"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWACTV02D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWACTV02D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-750"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADC102P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADC102P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-752"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADC102P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADC102P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-753"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADC102P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADC102P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-754"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADFS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADFS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-756"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADFS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADFS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-757"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADFS01P/extensions/WindowsPatchExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWADFS01P/extensions/WindowsPatchExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-758"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-760"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02D/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02D/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-761"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-762"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-764"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-765"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWALCV02P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-766"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIB01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIB01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-768"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIB01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIB01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-769"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIBW01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIBW01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-771"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIBW01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBIBW01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-772"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT03D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT03D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-774"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT03D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT03D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-775"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT04D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT04D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-777"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT04D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT04D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-778"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT05D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT05D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-780"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT05D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZT05D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-781"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZTB01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZTB01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-783"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZTB01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWBZTB01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-784"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL02P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL02P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-786"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL02P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL02P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-787"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL02P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL02P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-788"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL101P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL101P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-790"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL101P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL101P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-791"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL101P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFIL101P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-792"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTG01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTG01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-794"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTG01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTG01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-795"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTP101D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTP101D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-797"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTP101D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWFTP101D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-798"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWJKS01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWJKS01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-800"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWJKS01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWJKS01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-801"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWLIC01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWLIC01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-803"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWLIC01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWLIC01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-804"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWLIC01P/extensions/WindowsPatchExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWLIC01P/extensions/WindowsPatchExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-805"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWNPS01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWNPS01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-807"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWNPS01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWNPS01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-808"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWNPS01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWNPS01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-809"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-811"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-812"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-813"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P/extensions/WindowsPatchExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWPGW01P/extensions/WindowsPatchExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-814"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDB01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDB01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-816"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDB01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDB01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-817"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDG01D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDG01D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-819"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDG01D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWRDG01D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-820"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-822"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-823"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-824"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSQL04D/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-825"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSSV01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSSV01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-827"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSSV01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSSV01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-828"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSSV01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWSSV01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-829"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-831"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-832"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-833"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHAKLWWMS20T/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-834"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHCLDWADC105P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHCLDWADC105P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-836"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHCLDWADC105P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHCLDWADC105P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-837"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHCLDWADC105P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHCLDWADC105P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-838"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHNDCWADC101P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHNDCWADC101P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-840"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHNDCWADC101P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHNDCWADC101P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-841"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHNDCWADC101P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHNDCWADC101P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-842"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-844"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-845"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/MicrosoftDefenderForSQL": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/MicrosoftDefenderForSQL",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-846"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-847"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAEQU102P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-848"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR101P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR101P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-850"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR101P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR101P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-851"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR101P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR101P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-852"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR103P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR103P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-854"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR103P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR103P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-855"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR103P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR103P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-856"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR104P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR104P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-858"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR104P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR104P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-859"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR104P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSHAWSVR104P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-860"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSROWADC101P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSROWADC101P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-862"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSROWADC101P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSROWADC101P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-863"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSROWADC101P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WHSROWADC101P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-864"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-866"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-867"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-868"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/WSAKLWPRO01P/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-869"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/wh523wvss01d/extensions/ChangeTracking-Windows": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/wh523wvss01d/extensions/ChangeTracking-Windows",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-871"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/wh523wvss01d/extensions/WindowsOsUpdateExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/wh523wvss01d/extensions/WindowsOsUpdateExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-872"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklvsql01dr/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklvsql01dr/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-873"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklvsql02drn/extensions/WindowsAgent.SqlServer": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklvsql02drn/extensions/WindowsAgent.SqlServer",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-874"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklwadc101p": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklwadc101p",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-875"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklwadc101p/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklwadc101p/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-876"
+	},
+	"/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklwadc101p/extensions/WindowsPatchExtension": {
+		"resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/whaklwadc101p/extensions/WindowsPatchExtension",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-877"
+	}
+}
