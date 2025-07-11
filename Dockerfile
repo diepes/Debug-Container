@@ -76,8 +76,8 @@ COPY /src/install-tfswitch-20241216.sh /tmp/install-tfswitch.sh
 RUN bash /tmp/install-tfswitch.sh "v1.2.4" && tfswitch --latest
 # aztfexport - https://github.com/Azure/aztfexport - M$ does not have debian version
 # https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/
-# 2024-04-16 v0.14.1, 2024-12-16 v0.15.0, 2025-03-25 v0.17.1, 
-RUN curl -sSL https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/aztfexport_0.17.1_amd64.deb -o /tmp/aztfexport_amd64.deb \
+# 2024-04-16 v0.14.1, 2024-12-16 v0.15.0, 2025-03-25 v0.17.1, 2025-06-16 v0.18.0
+RUN curl -sSL https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/aztfexport_0.18.0_amd64.deb -o /tmp/aztfexport_amd64.deb \
     && dpkg -i /tmp/aztfexport_amd64.deb
 
 # Copy aztfexport shell scripts
