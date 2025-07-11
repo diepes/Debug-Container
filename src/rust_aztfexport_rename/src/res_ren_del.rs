@@ -17,14 +17,17 @@ pub fn rename_resources(resource_mapping: &mut ResourceMapping) {
         }
     }
 }
+
 pub fn new_name(resource: &str) -> Option<String> {
     // Extract the resource name from the resource ID
     let parts: Vec<&str> = resource.split('/').collect();
+    // "resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04",
+    //                 /1            /2                                   /3             /4                        /5        /6                      /7       /
 
     assert_eq!(
         parts[1], "subscriptions",
         "Expected first part to be 'subscriptions' not '{}' in '{}'",
-        parts[0], resource
+        parts[1], resource
     );
     assert_eq!(
         parts[3], "resourceGroups",
@@ -38,7 +41,8 @@ pub fn new_name(resource: &str) -> Option<String> {
             "managedInstances",
             "networkSecurityGroups",
             "virtualMachines",
-            "machines", // for Arc machines
+            "machines",           // for Arc machines
+            "SqlServerInstances", // for Arc SQL Server instances
         ];
         assert!(
             valid_names.contains(&parts[7]),
@@ -50,7 +54,6 @@ pub fn new_name(resource: &str) -> Option<String> {
     } else {
         base_name = None;
     }
-
     if parts.len() > 0 {
         let mut newname = parts[parts.len() - 1].to_string();
         // Replace all "." with "_"
@@ -61,7 +64,6 @@ pub fn new_name(resource: &str) -> Option<String> {
         if let Some(base_name) = base_name {
             newname = format!("{}__{}", base_name, newname);
         }
-
         // Check that the resource name does not contain "." or "/"
         assert!(
             !newname.contains('.'),
@@ -78,6 +80,7 @@ pub fn new_name(resource: &str) -> Option<String> {
         None
     }
 }
+
 fn delete_check(_key: &str, resource: &Resource) -> bool {
     // Check if the resource type contains value in resource_types_to_delete
     let resource_types_to_delete: Vec<&str> = vec![
@@ -100,6 +103,7 @@ fn delete_check(_key: &str, resource: &Resource) -> bool {
     }
     false
 }
+
 pub fn delete_unwanted(resources: &mut ResourceMapping) {
     // resource_types to delete
     // Iterate through the resource mapping
