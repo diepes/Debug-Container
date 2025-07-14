@@ -67,12 +67,17 @@ pub fn new_name(resource: &str) -> Option<String> {
         // Check that the resource name does not contain "." or "/"
         assert!(
             !newname.contains('.'),
-            "Resource name contains '.' {}",
+            "assert fail: Resource name contains '.' {}",
             newname
         );
         assert!(
             !newname.contains('/'),
-            "Resource name contains '/' {}",
+            "assert fail: Resource name contains '/' {}",
+            newname
+        );
+        assert!(
+            !newname.contains('$'),
+            "assert fail: Resource name contains '$' {}",
             newname
         );
         Some(newname)
@@ -93,6 +98,7 @@ fn delete_check(_key: &str, resource: &Resource) -> bool {
         "/encryptionProtector/current",
         "/vulnerabilityAssessments/Default",
         "/securityAlertPolicies/Default",
+        "/Databases/", // Arc import VM not DB's on vm.
     ];
     // Check if the resource type contains value in resource_types_to_delete
     if resource_types_to_delete
@@ -191,7 +197,36 @@ mod tests {
             );
         }
     }
-
+    #[test]
+    fn test_delete_rename_08() {
+        // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
+        let file_path = "tests/202507_arc_rg/aztfexportResourceMapping_08.json";
+        let mut resource_mapping: ResourceMapping = read_test_resource_json(file_path);
+        delete_unwanted(&mut resource_mapping);
+        // loop through the resource mapping and check if .resource_name_test is DELETE for all resources to be deleted
+        for (_k, r) in resource_mapping.iter() {
+            if delete_check(&r.resource_id, r) {
+                assert_eq!(
+                    r.resource_name_test,
+                    Some("DELETE".to_string()),
+                    "Test resource not marked for deletion: name: {}",
+                    r.resource_name
+                );
+            }
+            let new_name = new_name(&r.resource_id);
+            assert!(
+                new_name.is_some(),
+                "New name is None for resource: {}",
+                r.resource_id
+            );
+            // Catch invalid $ in new name.
+            assert!(
+                !new_name.clone().unwrap().contains("$"),
+                "New name contains '$': {}",
+                new_name.unwrap()
+            );
+        }
+    }
     #[test]
     fn test_new_name_file() {
         // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
