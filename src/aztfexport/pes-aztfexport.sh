@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # WARN: !! aztfexport ask's and then deletes directory where you run it.
 set -eu
-version="1.4-20250424"
+version="1.5-20250712"
+# 2025-07-12 v1.5 Add option to set provider from azurerm to azapi. export AZTFEXPORT_PROVIDER="azapi"
 # 2025-04-24 v1.4 Use rust_aztfexport_rename replacing pes_search_and_replace.py
 # 2025-04-16 v1.3 Update version tf 1.11.0  and  aztfexport 0.17.1
 # 2024-08-21 v1.2 Add pes_search_and_replace.py to rename aztfexportResourceMapping.json
@@ -11,6 +12,7 @@ version="1.4-20250424"
 AZTFEXPORT_SUBSCRIPTION_ID="${AZTFEXPORT_SUBSCRIPTION_ID}"
 AZTFEXPORT_RG="${AZTFEXPORT_RG}"
 AZURERM="4.26.0"
+PROVIDER="${AZTFEXPORT_PROVIDER:-'azurerm' --provider-version='$AZURERM'}"
 #
 echo " Logged in with:  az login --use-device-code"
 az account set --subscription "$AZTFEXPORT_SUBSCRIPTION_ID"
@@ -31,12 +33,11 @@ rm -rf $out_dir/*
 rm -rf $out_dir/.terraf*
 #
 if [[ "$1" == "rg" ]]; then
-    echo "#1 aztfexport resource-group ..." ; sleep 2;
+    echo "#1 aztfexport resource-group ... '$AZTFEXPORT_RG" ; sleep 2;
     aztfexport resource-group \
         --output-dir="$out_dir" \
         --subscription-id="$AZTFEXPORT_SUBSCRIPTION_ID" \
-        --provider-name="azurerm" \
-        --provider-version="$AZURERM" \
+        --provider-name="$PROVIDER" \
         --non-interactive="true" \
         --generate-mapping-file="false" \
         --generate-import-block="false" \
@@ -52,8 +53,7 @@ elif [[ "$1" == "query" ]]; then
     aztfexport query \
         --output-dir="$out_dir" \
         --subscription-id="$AZTFEXPORT_SUBSCRIPTION_ID" \
-        --provider-name="azurerm" \
-        --provider-version="$AZURERM" \
+        --provider-name="$PROVIDER" \
         --generate-mapping-file="false" \
         --generate-import-block="false" \
         --non-interactive="true" \
@@ -71,8 +71,7 @@ elif [[ "$1" == "map" ]]; then
     aztfexport mapping-file \
         --output-dir="$out_dir" \
         --subscription-id="$AZTFEXPORT_SUBSCRIPTION_ID" \
-        --provider-name="azurerm" \
-        --provider-version="$AZURERM" \
+        --provider-name="$PROVIDER" \
         --generate-import-block="true" \
         --non-interactive="true" \
         $map_file
