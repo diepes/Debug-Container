@@ -45,6 +45,9 @@ pub fn new_name(resource: &str) -> Option<String> {
             "managedInstances",
             "networkSecurityGroups",
             "virtualMachines",
+            "disks",
+            "snapshots",
+            "networkInterfaces",
             "machines",           // for Arc machines
             "SqlServerInstances", // for Arc SQL Server instances
         ];
@@ -56,9 +59,10 @@ pub fn new_name(resource: &str) -> Option<String> {
         let _provider = parts[6];
         assert!(
             valid_names.contains(&parts[7]),
-            "assert! Invalid name: '{}' {}",
+            "assert! Invalid name: '{}' resource='{}' len={}",
             parts[7],
-            resource
+            resource,
+            parts.len()
         );
         // New name parts[8] prevent duplicates "machines" and "SqlServerInstances"
         let mut prefix = "";
