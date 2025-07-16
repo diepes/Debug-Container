@@ -22,21 +22,25 @@ pub fn new_name(resource: &str) -> Option<String> {
     // Extract the resource name from the resource ID
     let parts: Vec<&str> = resource.split('/').collect();
     // "resource_id": "/subscriptions/ed6ab5f7-5745-43f1-833b-28a7c06dc330/resourceGroups/z-azurearc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04",
-    //                 /1            /2                                   /3             /4                        /5        /6                      /7       /
-
+    //                 /1            /2                                   /3             /4                        /5        /6                      /7       /8
     assert_eq!(
         parts[1], "subscriptions",
         "Expected first part to be 'subscriptions' not '{}' in '{}'",
         parts[1], resource
     );
+    let _subscription_id = parts[2];
     assert_eq!(
         parts[3], "resourceGroups",
         "Expected first part to be 'resourceGroups' not '{}' in '{}'",
         parts[3], resource
     );
+    let _resource_group = parts[4];
+    // Check if the resource type is valid
+
     // test if parts[7] is one of a list of strings if len(parts) = 10
-    let base_name: Option<&str>;
-    if parts.len() > 9 {
+    let base_name: Option<String>;
+    // RG len =4, VM len = 8, More detail 10
+    if parts.len() > 8 {
         let valid_names = vec![
             "managedInstances",
             "networkSecurityGroups",
@@ -44,25 +48,47 @@ pub fn new_name(resource: &str) -> Option<String> {
             "machines",           // for Arc machines
             "SqlServerInstances", // for Arc SQL Server instances
         ];
+        assert_eq!(
+            parts[5], "providers",
+            "Expected first part to be 'providers' not '{}' in '{}'",
+            parts[5], resource
+        );
+        let _provider = parts[6];
         assert!(
             valid_names.contains(&parts[7]),
             "assert! Invalid name: '{}' {}",
             parts[7],
             resource
         );
-        base_name = Some(parts[8]);
+        // New name parts[8] prevent duplicates "machines" and "SqlServerInstances"
+        let mut prefix = "";
+        if parts[7] == "machines" {
+            prefix = "vm-"; // Arc import VM
+        } else if parts[7] == "SqlServerInstances" {
+            prefix = "sql-"; // Arc import SQL Server
+        }
+        let bn = format!("{}{}", prefix, parts[8]);
+        base_name = Some(bn);
     } else {
         base_name = None;
     }
+    //
     if parts.len() > 0 {
         let mut newname = parts[parts.len() - 1].to_string();
         // Replace all "." with "_"
         newname = newname.replace('.', "_");
         // Check if the resource name is not empty
         assert!(!newname.is_empty(), "Resource name is empty {}", resource);
-
+        // add base_name to resource name if it exists
         if let Some(base_name) = base_name {
-            newname = format!("{}__{}", base_name, newname);
+            if parts.len() == 9 {
+                // If we have a base name, we need to add it to the new name
+                // This is for resources like "virtualMachines" where the name is not unique
+                newname = base_name;
+            } else {
+                // For resources like "machines" or "SqlServerInstances", we add the prefix
+                newname = format!("{}__{}", base_name, newname);
+            }
         }
         // Check that the resource name does not contain "." or "/"
         assert!(
@@ -147,6 +173,7 @@ mod tests {
             "The new name did not match the expected value"
         );
     }
+
     fn read_test_resource_json(file_path: &str) -> ResourceMapping {
         // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
         let file = std::fs::File::open(file_path).expect("Failed to open file");

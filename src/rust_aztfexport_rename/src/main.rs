@@ -13,8 +13,9 @@ fn main() {
     let mut tf_resources = match read_resource_mapping(&args.src) {
         Ok(resource_mapping) => {
             println!(
-                "Successfully read resource mapping from '{}': {:?}",
-                args.src, resource_mapping
+                "Successfully read resource mapping from '{}': count={}",
+                args.src,
+                resource_mapping.len()
             );
 
             // Here you can write the resource mapping to the destination file if needed
