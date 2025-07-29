@@ -51,6 +51,7 @@ pub fn new_name(resource: &str) -> Option<String> {
             "machines", // for Arc machines
             "SqlServerInstances", // for Arc SQL Server instances
                         // "/licenseProfiles/",
+            "licenses",
         ];
         assert_eq!(
             parts[5], "providers",

@@ -5145,5 +5145,15 @@
 		"resource_type": "azapi_resource",
 		"resource_name": "res-878",
 		"resource_name_test": "DELETE"
+	},
+	"/subscriptions/fcdddddd-1111-4444-9999-699999999997/resourceGroups/z-prod-twg-onpremise-vm-rg/providers/Microsoft.HybridCompute/licenses/TWG-WindowsServer2012standardProd-AzureARC": {
+		"resource_id": "/subscriptions/fcdddddd-1111-4444-9999-699999999997/resourceGroups/z-prod-sso-onpremise-vm-rg/providers/Microsoft.HybridCompute/licenses/TWG-WindowsServer2012standardProd-AzureARC",
+		"resource_type": "azapi_resource",
+		"resource_name": "res-extra404"
+	},
+	"/subscriptions/fcdddddd-1111-4444-9999-699999999997/resourceGroups/z-prod-twg-onpremise-vm-rg/providers/Microsoft.HybridCompute/licenses/TWGDomainController-WindowsServer2012standardProd-AzureARC": {
+		"resource_id": "/subscriptions/fcdddddd-1111-4444-9999-699999999997/resourceGroups/z-prod-sso-onpremise-vm-rg/providers/Microsoft.HybridCompute/licenses/TWGDomainController-WindowsServer2012standardProd-AzureARC",
+		"resource_type": "azapi_resource",
+		"resource_name": "res-extra405"
 	}
 }
