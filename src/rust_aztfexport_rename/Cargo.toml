@@ -1,6 +1,6 @@
 [package]
 name = "rust_aztfexport_rename"
-version = "0.1.23+20250810"
+version = "0.1.24+20250810"
 edition = "2024"
 
 [dependencies]

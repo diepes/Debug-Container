@@ -40,15 +40,20 @@ pub fn add_filters(extra: &[String]) {
     if extra.is_empty() {
         return;
     }
-    // Extend stored patterns
-    {
+
+    // 1) Extend patterns, then clone, then drop the VEC lock
+    let new_patterns: Vec<String> = {
         let mut v = DELETE_PATTERNS_VEC.lock().expect("mutex poisoned");
         v.extend(extra.iter().map(|s| glob_to_regex_contains(s)));
-    }
-    // Rebuild compiled set from updated patterns
-    let v = DELETE_PATTERNS_VEC.lock().expect("mutex poisoned");
+        v.clone()
+    }; // VEC lock released here
+
+    // 2) Build new set outside of any locks
+    let new_set = RegexSet::new(new_patterns).expect("invalid CLI filter patterns");
+
+    // 3) Install compiled set
     let mut set_guard = DELETE_REGEX_SET.lock().expect("mutex poisoned");
-    *set_guard = RegexSet::new(v.clone()).expect("invalid CLI filter patterns");
+    *set_guard = new_set;
 }
 
 // Convert simple globs (* and ?) to regex fragments for substring matching
@@ -127,7 +132,34 @@ mod tests {
                 );
             }
             let nn = new_name(&r.resource_id);
-            assert!(nn.is_some(), "New name is None for resource: {}", r.resource_id);
+            assert!(
+                nn.is_some(),
+                "New name is None for resource: {}",
+                r.resource_id
+            );
+        }
+    }
+    #[test]
+    fn test_filter_add_filter() {
+        let file_path = "tests/202508_filter/aztfexpResMap_08.json";
+        let resource_mapping: ResourceMapping = read_test_resource_json(file_path);
+        // Simulate adding filter to remove specific resource
+        add_filters(&vec!["/TestCustomFilter/".to_string()]);
+        for (_k, r) in resource_mapping.iter() {
+            if delete_check(&r.resource_id, r) {
+                assert!(
+                    matches!(r.resource_name_test.as_deref(), Some(v) if v.starts_with("DELETE")),
+                    "Test resource not marked for deletion (must start with 'DELETE'): name: {} value: {:?}",
+                    r.resource_name,
+                    r.resource_name_test
+                );
+            }
+            let nn = new_name(&r.resource_id);
+            assert!(
+                nn.is_some(),
+                "New name is None for resource: {}",
+                r.resource_id
+            );
         }
     }
 }

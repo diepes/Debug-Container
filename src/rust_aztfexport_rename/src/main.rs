@@ -1,11 +1,11 @@
 mod clap;
-mod res_map;
 mod res_del;
+mod res_map;
 mod res_rename;
 
 use clap::Cli;
-use res_map::read_resource_mapping;
 use res_del::add_filters;
+use res_map::read_resource_mapping;
 
 fn main() {
     // Parse command-line arguments

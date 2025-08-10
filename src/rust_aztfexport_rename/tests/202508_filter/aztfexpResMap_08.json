@@ -1,0 +1,19 @@
+{
+	"/subscriptions/fcdddddd-1111-4444-9999-699999999998/resourceGroups/z-azarc-dev-windows-rg": {
+		"resource_id": "/subscriptions/fcdddddd-1111-4444-9999-699999999998/resourceGroups/z-azarc-dev-windows-rg",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/fcdddddd-1111-4444-9999-699999999998/resourceGroups/z-azarc-dev-windows-rg/providers/TestCustomFilter/machines/xyz": {
+		"resource_id": "/subscriptions/fcdddddd-1111-4444-9999-699999999998/resourceGroups/z-azarc-dev-windows-rg/providers/TestCustomFilter/machines/xyz",
+		"resource_type": "azurerm_arc_machine",
+		"resource_name": "res-2",
+        "resource_name_test": "DELETE-CustomFilter should delete this"
+	},
+	"/subscriptions/fcdddddd-1111-4444-9999-699999999998/resourceGroups/z-azarc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04/extensions/AzureMonitorWindowsAgent": {
+		"resource_id": "/subscriptions/fcdddddd-1111-4444-9999-699999999998/resourceGroups/z-azarc-dev-windows-rg/providers/Microsoft.HybridCompute/machines/AKLADC04/extensions/AzureMonitorWindowsAgent",
+		"resource_type": "azurerm_arc_machine_extension",
+		"resource_name": "res-3",
+        "resource_name_test": "DELETE"
+	}
+}
