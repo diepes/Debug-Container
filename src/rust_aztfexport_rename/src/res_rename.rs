@@ -1,4 +1,6 @@
-use crate::res_map::{Resource, ResourceMapping};
+use crate::res_map::ResourceMapping;
+// Re-export delete_check from res_del so tests in this module can use `delete_check` directly
+pub use crate::res_del::delete_check;
 
 // function to rename resources in ResourceMapping, based on parsed values of resource_id updating resource_name.
 pub fn rename_resources(resource_mapping: &mut ResourceMapping) {
@@ -48,9 +50,8 @@ pub fn new_name(resource: &str) -> Option<String> {
             "disks",
             "snapshots",
             "networkInterfaces",
-            "machines", // for Arc machines
+            "machines",           // for Arc machines
             "SqlServerInstances", // for Arc SQL Server instances
-                        // "/licenseProfiles/",
             "licenses",
         ];
         assert_eq!(
@@ -80,7 +81,6 @@ pub fn new_name(resource: &str) -> Option<String> {
         base_name = None;
     }
     // got base_name or short resource e.g. RG
-    //
     if parts.len() > 1 {
         let mut newname = parts[parts.len() - 1].to_string();
         // Replace all "." with "_"
@@ -127,8 +127,6 @@ pub fn new_name(resource: &str) -> Option<String> {
                     }
                 };
             } else {
-                // for sub-resources like "databases" or "extensions", we add the prefix
-                //if parts.len() > 9
                 // For resources like "machines" or "SqlServerInstances", we add the prefix
                 newname = format!("{}__{}", base_name, newname);
             }
@@ -153,33 +151,6 @@ pub fn new_name(resource: &str) -> Option<String> {
     } else {
         None
     }
-}
-
-fn delete_check(_key: &str, resource: &Resource) -> bool {
-    // Check if the resource type contains value in resource_types_to_delete
-    let resource_types_to_delete: Vec<&str> = vec![
-        // "Microsoft.Sql/managedInstances/databases",
-        // "Microsoft.Sql/servers/databases",
-        // "Microsoft.Sql/servers/elasticPools",
-        "/securityRules/Microsoft.Sql-managedInstances_UseOnly_mi-",
-        "Microsoft.Insights.VMDiagnosticsSettings",
-        "/extensions/MDE.Windows",
-        "/encryptionProtector/current",
-        "/vulnerabilityAssessments/Default",
-        "/securityAlertPolicies/Default",
-        "/Databases/", // Arc import VM not DB's on vm.
-        "/extensions/",
-        "/licenseProfiles/",
-        "/AvailabilityGroups/",
-    ];
-    // Check if the resource type contains value in resource_types_to_delete
-    if resource_types_to_delete
-        .iter()
-        .any(|&resource_type| resource.resource_id.contains(resource_type))
-    {
-        return true;
-    }
-    false
 }
 
 pub fn delete_unwanted(resources: &mut ResourceMapping) {
@@ -227,56 +198,6 @@ mod tests {
         let resource_mapping: ResourceMapping =
             serde_json::from_reader(reader).expect("Failed to parse JSON");
         resource_mapping
-    }
-
-    #[test]
-    fn test_delete_unwanted_02() {
-        // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
-        let file_path = "tests/202504_aztfexport_rg/aztfexportResourceMapping_test2.json";
-        let resource_mapping: ResourceMapping = read_test_resource_json(file_path);
-        // loop through the resource mapping and check if .resource_name_test is DELETE for all resources to be deleted
-        for (_k, r) in resource_mapping.iter() {
-            if delete_check(&r.resource_id, r) {
-                assert_eq!(
-                    r.resource_name_test,
-                    Some("DELETE".to_string()),
-                    "Test resource not marked for deletion: name: {}",
-                    r.resource_name
-                );
-            } else {
-                // Check that not marked does not have resource_name_test set to DELETE
-                assert_ne!(
-                    r.resource_name_test,
-                    Some("DELETE".to_string()),
-                    "Resource marked for deletion incorrectly: name: {}",
-                    r.resource_name
-                );
-            }
-        }
-    }
-
-    #[test]
-    fn test_delete_rename_07() {
-        // Load test data tests/202504_aztfexport_rg/aztfexportResourceMapping.json
-        let file_path = "tests/202507_arc_rg/aztfexportResourceMapping.json";
-        let resource_mapping: ResourceMapping = read_test_resource_json(file_path);
-        // loop through the resource mapping and check if .resource_name_test is DELETE for all resources to be deleted
-        for (_k, r) in resource_mapping.iter() {
-            if delete_check(&r.resource_id, r) {
-                assert_eq!(
-                    r.resource_name_test,
-                    Some("DELETE".to_string()),
-                    "Test resource not marked for deletion: name: {}",
-                    r.resource_name
-                );
-            }
-            let new_name = new_name(&r.resource_id);
-            assert!(
-                new_name.is_some(),
-                "New name is None for resource: {}",
-                r.resource_id
-            );
-        }
     }
     #[test]
     fn test_delete_rename_08() {

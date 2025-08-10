@@ -21,6 +21,10 @@ pub struct Cli {
     /// Destination file path
     #[arg(short, long)]
     pub dst: String,
+
+    /// Exclude filter pattern (can be repeated)
+    #[arg(short = 'f', long = "filter")]
+    pub filter: Vec<String>,
 }
 
 impl Cli {

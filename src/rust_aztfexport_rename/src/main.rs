@@ -1,13 +1,20 @@
 mod clap;
 mod res_map;
-mod res_ren_del;
+mod res_del;
+mod res_rename;
 
 use clap::Cli;
 use res_map::read_resource_mapping;
+use res_del::add_filters;
 
 fn main() {
     // Parse command-line arguments
     let args = Cli::parse_args();
+
+    // Apply optional filters passed on the CLI
+    if !args.filter.is_empty() {
+        add_filters(&args.filter);
+    }
 
     // Read the source file
     let mut tf_resources = match read_resource_mapping(&args.src) {
@@ -28,9 +35,9 @@ fn main() {
         }
     };
     // call delete_resources
-    res_ren_del::delete_unwanted(&mut tf_resources);
+    res_rename::delete_unwanted(&mut tf_resources);
     // call rename_resources
-    res_ren_del::rename_resources(&mut tf_resources);
+    res_rename::rename_resources(&mut tf_resources);
 
     // Write the resource mapping to the destination file
     match res_map::write_resource_mapping(&args.dst, &tf_resources) {
