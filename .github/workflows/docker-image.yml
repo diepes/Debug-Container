@@ -26,5 +26,6 @@ jobs:
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_ACCESSTOKEN }}
-    
 
+    - name: Show image size
+      run: docker images diepes/debug:latest --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}"
