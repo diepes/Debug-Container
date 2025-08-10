@@ -35,33 +35,56 @@ RUN apt-get update \
         libssl-dev \
         linux-libc-dev \
         libkrb5-dev \
+        build-essential krb5-multidev \
     && rm -rf /var/lib/apt/lists/* \
     && echo "# apt done." \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
 
-    # Create python venv
+# Pin uv and hardcode archive checksums (from the GitHub release assets) 2025-08
+ARG UV_VERSION=0.8.8
+ARG UV_SHA256_X64="ecc2e39de86afea661c145f33f6a89a45b1d2427d51a22b458e2c64238794180"
+ARG UV_SHA256_AARCH64="4e144807bef9a3b6f44fd5e4084d5010738787745c07e09dee4f008e8bee17a8"
+
+RUN set -eux; \
+    arch="$(uname -m)"; \
+    case "$arch" in \
+        x86_64|amd64) target="x86_64-unknown-linux-gnu"; sha256="${UV_SHA256_X64}";; \
+        aarch64|arm64) target="aarch64-unknown-linux-gnu"; sha256="${UV_SHA256_AARCH64}";; \
+        *) echo "unsupported arch: $arch"; exit 1;; \
+    esac; \
+    base="https://github.com/astral-sh/uv/releases/download/${UV_VERSION}"; \
+    asset="uv-${target}.tar.gz"; \
+    curl -fsSLo /tmp/uv.tar.gz "${base}/${asset}"; \
+    echo "${sha256}  /tmp/uv.tar.gz" | sha256sum -c -; \
+    tmpdir="$(mktemp -d)"; \
+    tar -xzf /tmp/uv.tar.gz -C "$tmpdir"; \
+    install -m 0755 "$tmpdir"/uv /usr/local/bin/uv 2>/dev/null || install -m 0755 "$tmpdir"/*/uv /usr/local/bin/uv; \
+    rm -rf "$tmpdir" /tmp/uv.tar.gz; \
+    /usr/local/bin/uv --version
+
+
+# Create python venv with uv
 ENV VIRTUAL_ENV=/opt/venv
-# ENV VIRTUAL_ENV=${HOME}/venv/
 RUN mkdir -p ${VIRTUAL_ENV}
-# create venv
-RUN python3 -m venv ${VIRTUAL_ENV}
+RUN uv venv ${VIRTUAL_ENV}
 ENV PATH="${VIRTUAL_ENV}/bin:$PATH"
+ENV UV_PY="${VIRTUAL_ENV}/bin/python"
 
-# Install ansible
-RUN pip install pykerberos 
-RUN pip install pywinrm[kerberos] pywinrm requests
-RUN pip install jmespath
+# Install Python packages with uv (no pip needed)
+RUN uv pip install --python "${UV_PY}" pykerberos
+RUN uv pip install --python "${UV_PY}" "pywinrm[kerberos]" pywinrm requests
+RUN uv pip install --python "${UV_PY}" jmespath
 
-# Install Azure cli and ansible modules
-RUN curl -sL https://aka.ms/InstallAzureCLIDeb |  bash
+# Verify kerberos import at build time
+RUN "${UV_PY}" -c "import kerberos; import sys; print('pykerberos OK', getattr(kerberos,'__version__', '?'), sys.version)"
 
-RUN pip install ansible
+# Azure CLI
+RUN curl -fsSL https://aka.ms/InstallAzureCLIDeb | bash
+
+# Ansible and Azure collection deps
+RUN uv pip install --python "${UV_PY}" ansible
 RUN ansible-galaxy collection install azure.azcollection --force
-#
-# # Debug azure.azcollection requirements with --progress=plain
-# RUN ls -al ${HOME}/.ansible/collections/
-# RUN ls -al         ${HOME}/.ansible/collections/ansible_collections/azure/azcollection/
-RUN pip install -r ${HOME}/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt
+RUN uv pip install --python "${UV_PY}" -r ${HOME}/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt
 
 # Install AWS cli
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip" &&\
