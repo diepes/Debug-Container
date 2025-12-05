@@ -1,8 +1,8 @@
 # Define the platform as a build argument with a default value
 ARG PLATFORM=linux/amd64
-
+#--------------------------------------------------------
 # Stage 1: Build the Rust executable
-FROM --platform=${PLATFORM} rust:1.85.1-slim AS builder
+FROM --platform=${PLATFORM} rust:slim-bullseye AS build_rust_aztfexport_rename
 WORKDIR /app
 # Copy the Rust project files into the container
 COPY ./src/rust_aztfexport_rename /app
@@ -11,9 +11,9 @@ RUN cargo test --release --locked --all-targets --all-features
 # Build the Rust project in release mode
 RUN cargo build --release
 
+#--------------------------------------------------------
 # Stage 2: Final image
-# Use the platform argument in the FROM instruction
-FROM --platform=${PLATFORM} docker.io/debian:stable-slim
+FROM --platform=${PLATFORM} docker.io/debian:bullseye-slim
 
 RUN apt-get update \
     && apt-get install -y \
@@ -41,9 +41,9 @@ RUN apt-get update \
     && echo "#Built @ $(date -Is)" >> /info-built.txt
 
 # Pin uv and hardcode archive checksums (from the GitHub release assets) 2025-08
-ARG UV_VERSION=0.8.8
-ARG UV_SHA256_X64="ecc2e39de86afea661c145f33f6a89a45b1d2427d51a22b458e2c64238794180"
-ARG UV_SHA256_AARCH64="4e144807bef9a3b6f44fd5e4084d5010738787745c07e09dee4f008e8bee17a8"
+ARG UV_VERSION=0.9.15 # 2025-12-02
+ARG UV_SHA256_X64="2053df0089327569cddd6afea920c2285b482d9b123f5db9f658273e96ab792c"
+ARG UV_SHA256_AARCH64="d89430e201f629b203975c605cd6bfe85afc2bc0781d95838e2b5177a03b1545"
 
 RUN set -eux; \
     arch="$(uname -m)"; \
@@ -83,7 +83,8 @@ RUN curl -fsSL https://aka.ms/InstallAzureCLIDeb | bash
 
 # Ansible and Azure collection deps
 RUN uv pip install --python "${UV_PY}" ansible
-RUN ansible-galaxy collection install azure.azcollection --force
+# https://galaxy.ansible.com/ui/repo/published/azure/azcollection/ #3.12.0 error ??
+RUN ansible-galaxy collection install azure.azcollection==3.4.0 --force
 RUN uv pip install --python "${UV_PY}" -r ${HOME}/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt
 
 # Install AWS cli
@@ -94,44 +95,29 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/aws
 
 # Install terraform switcher
 # https://tfswitch.warrensbox.com/Install/
-# RUN curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
-COPY /src/install-tfswitch-20241216.sh /tmp/install-tfswitch.sh
-RUN bash /tmp/install-tfswitch.sh "v1.2.4" && tfswitch --latest
-# aztfexport - https://github.com/Azure/aztfexport - M$ does not have debian version
-# https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/
-# 2024-04-16 v0.14.1, 2024-12-16 v0.15.0, 2025-03-25 v0.17.1, 2025-06-16 v0.18.0
-RUN curl -sSL https://packages.microsoft.com/ubuntu/22.04/prod/pool/main/a/aztfexport/aztfexport_0.18.0_amd64.deb -o /tmp/aztfexport_amd64.deb \
-    && dpkg -i /tmp/aztfexport_amd64.deb
-
-# Copy aztfexport shell scripts
-COPY /src/aztfexport/* /usr/local/bin
-
-# Copy script that uses okta to retrieve AWS k8s credentials
-COPY /src/okta-get-aws-eks-credentials.sh /usr/local/bin
+# Simplify tfswitch install ADD will extract local binary from tar.gz
+ADD src/terraform_switch/terraform-switcher_v1.10.0_linux_amd64.tar.gz /tmp/tfswitch
+RUN ls -l /tmp/tfswitch && mv /tmp/tfswitch/tfswitch /usr/local/bin/tfswitch && chmod +x /usr/local/bin/tfswitch
+RUN tfswitch --latest
 
 # Install k8s kubectl
 RUN curl -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl && chmod +x /usr/local/bin/kubectl
 
 # Install rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-# Copy the Rust binary from the builder stage
-COPY --from=builder /app/target/release/rust_aztfexport_rename /usr/local/bin/rust_aztfexport_rename
+# Copy the Rust binary from the build_rust_aztfexport_rename stage
+COPY --from=build_rust_aztfexport_rename /app/target/release/rust_aztfexport_rename /usr/local/bin/rust_aztfexport_rename
 
 # Install nodejs nvm node version manager
 ENV NODE_VERSION=22
 ENV NVM_DIR="/usr/local/nvm"
-# NVM v0.39.6 2023-08 - Use git commit to pin code.
-ENV NVM_VERSION=c92adb3c479d70bb29f4399a808c972ef41510e7
-# Node install - fixed git nvm version. 
-RUN git clone https://github.com/nvm-sh/nvm.git "${NVM_DIR}" 
 RUN mkdir -p $NVM_DIR
-WORKDIR  "${NVM_DIR}"
-RUN git checkout ${NVM_VERSION} \
-    && \. "./nvm.sh" \
+# NVM tag=v0.40.3 2025-04-24 - commit "977563e97ddc66facf3a8e31c6cff01d236f09bd"
+COPY src/nvm_node_installer/nvm_v0.40.3_20250424.sh $NVM_DIR/nvm.sh
+RUN \. "$NVM_DIR/nvm.sh" \
     && nvm install "${NODE_VERSION}" \
     && echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> "${HOME}/.bashrc" \
     && echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> "${HOME}/.bashrc"  
-
 
 ARG ROOT_PASS="ilovelinux"
 # Note: generate encrypted password with $(openssl passwd -6 tm-admin-example)
