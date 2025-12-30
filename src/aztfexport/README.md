@@ -5,7 +5,7 @@ Shell scripts to run aztfexport tool to create terraform main.tf and imports fro
 ## How to import
 
 1. (Optional) Create tfimport dir, and add remotestate.tf to point to TF cloud.
-1. run the debug container ```docker run -it  -v ${PWD}:/root/tf:ro -v ${PWD}/aztf_out:/root/tf/aztf_out diepes/debug```
+1. run the debug container ```docker run -it --rm -v ${PWD}:/root/tf:ro -v ${PWD}/aztf_out:/root/tf/aztf_out diepes/debug```
    - this will mount the local git volume/dir to ./tf in container.
    - NOTE: Container env with TF etc.
 1. In container update  ```pes-aztfexport.sh``` to repo with correct Subscription and RG

@@ -6,10 +6,10 @@ Container based on Debian with debug tools added. (--platform=linux/amd64)
 Its big :( 4.6GB
 
 - aws-cli
-- az azure cli (Using pip --break-system-packages)
+- az azure cli (Using uv pip)
 - rust + cargo
-- nodejs(v20) nvm
-- ansible (Using pip --break-system-packages)
+- nodejs(v22) nvm
+- ansible (Using uv pip)
 - terraform -> [tfswitch + aztfexport(2025-03-25 v0.17.1) + shell scripts]
 - network tools: ssh, tcpdump, ngrep, dnsutils(dig), etc.
 
@@ -23,9 +23,9 @@ Its big :( 4.6GB
  4. Create NS if it does not exist. kubectl create namespace ${NS}
  5. Run container in k8s
     1. run full debug container:
-     ```kubectl run  -n ${POD_NS} ${POD_NAME} -it --restart=Never --image=docker.io/diepes/debug:latest -- bash```
+     ```kubectl run  -n ${POD_NS} ${POD_NAME} -it --rm --restart=Never --image=docker.io/diepes/debug:latest -- bash```
     1. attache debug container to existing container e.g. ingress
-    ```kubectl debug -n ${POD_NS} ${POD_NAME} -it --image=docker.io/diepes/debug:latest [ --target <ContainerNameInPod> ] -- sh```
+    ```kubectl debug -n ${POD_NS} ${POD_NAME} -it --rm --image=docker.io/diepes/debug:latest [ --target <ContainerNameInPod> ] -- sh```
     ```` kubectl debug -n tm-infra -it tm-infra-shared-ingress-nginx-controller-797ccc698d-4hmgb --image=debian:stable --target=controller -- bash```
     1. run local debug container
     ```docker run --rm -it docker.io/diepes/debug:latest bash```
@@ -74,3 +74,17 @@ Its big :( 4.6GB
 - nvm (nodejs)
 - terraform (tfswitch + aztfexport)
 - okta-get-aws-eks-credentials.sh (Script to use okta java client EKS credential retrieving see e.g. above.)
+
+# Local test
+
+- build
+
+      docker build . -t debug-local
+
+- run
+
+      docker run -it --rm --platform=linux/amd64 debug-local
+
+- 2nd exec into container
+
+      docker exec -it debug-local -- bash

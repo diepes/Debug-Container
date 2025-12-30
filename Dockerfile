@@ -2,7 +2,7 @@
 ARG PLATFORM=linux/amd64
 #--------------------------------------------------------
 # Stage 1: Build the Rust executable
-FROM --platform=${PLATFORM} rust:slim-bullseye AS build_rust_aztfexport_rename
+FROM --platform=${PLATFORM} rust:slim-trixie AS build_rust_aztfexport_rename
 WORKDIR /app
 # Copy the Rust project files into the container
 COPY ./src/rust_aztfexport_rename /app
@@ -13,7 +13,7 @@ RUN cargo build --release
 
 #--------------------------------------------------------
 # Stage 2: Final image
-FROM --platform=${PLATFORM} docker.io/debian:bullseye-slim
+FROM --platform=${PLATFORM} docker.io/debian:trixie-slim
 
 RUN apt-get update \
     && apt-get install -y \
