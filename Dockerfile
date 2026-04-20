@@ -74,7 +74,7 @@ ENV UV_PY="${VIRTUAL_ENV}/bin/python"
 RUN uv pip install --python "${UV_PY}" pykerberos
 RUN uv pip install --python "${UV_PY}" "pywinrm[kerberos]" pywinrm requests
 RUN uv pip install --python "${UV_PY}" jmespath
-RUN uv pip install --python "${UV_PY}" kubernetes
+RUN uv pip install --python "${UV_PY}" kubernetes dnspython
 
 
 # Verify kerberos import at build time

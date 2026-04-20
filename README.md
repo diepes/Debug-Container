@@ -46,17 +46,9 @@ Its big :( 4.6GB
                --name tfimport \
                diepes/debug
 
-    1. Okta retrieve AWS EKS k8s credentials.
-       1. Create setup ~/.okta/config.properties e.g.
+       1. Run Debug container mounting aws folder
 
-              OKTA_ORG=CORP.okta.com
-              OKTA_AWS_APP_URL=https://CORP.okta.com/home/amazon_aws/0xxxxxxxx000xx0/171
-              OKTA_USERNAME=123456
-              OKTA_BROWSER_AUTH=false
-
-       1. Run Debug container mounting aws and okta folders
-
-              docker run -v ~/.okta/config.properties:/root/.okta/config.properties -v ~/.aws:/root/.aws -v ~/.kube:/root/.kube -it diepes/debug 
+              docker run -v ~/.aws:/root/.aws -v ~/.kube:/root/.kube -it diepes/debug 
 
 ## Software in container
 
