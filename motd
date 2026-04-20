@@ -13,7 +13,7 @@
   * $ curl ipinfo.io ; echo                   ##> Find public ip
   * $ ip addr                                 ##> Local ip address
   * $ openssl s_client -connect <host/ip>:443 ##> Check SSL/TLS cert
-  * $ okta-get-aws-eks-credentials.sh         ##> Install java + okta client
-  * $ node -v ; python3 -V; cargo -V; kubectl ##> Software versions
+  * $ node -v ; python3 -V; cargo -V          ##> Software versions
+  * $ kubectl version; helm version           ##> k8s Software versions
       
 

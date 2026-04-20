@@ -103,6 +103,25 @@ RUN tfswitch --latest
 # Install k8s kubectl
 RUN curl -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl && chmod +x /usr/local/bin/kubectl
 
+# Install helm
+ARG HELM_VERSION=v3.18.4
+ARG HELM_SHA256_X64="f8180838c23d7c7d797b208861fecb591d9ce1690d8704ed1e4cb8e2add966c1"
+ARG HELM_SHA256_AARCH64="c0a45e67eef0c7416a8a8c9e9d5d2d30d70e4f4d3f7bea5de28241fffa8f3b89"
+RUN set -eux; \
+    arch="$(uname -m)"; \
+    case "$arch" in \
+        x86_64|amd64) target="linux-amd64"; sha256="${HELM_SHA256_X64}";; \
+        aarch64|arm64) target="linux-arm64"; sha256="${HELM_SHA256_AARCH64}";; \
+        *) echo "unsupported arch: $arch"; exit 1;; \
+    esac; \
+    curl -fsSL "https://get.helm.sh/helm-${HELM_VERSION}-${target}.tar.gz" -o /tmp/helm.tar.gz; \
+    echo "${sha256}  /tmp/helm.tar.gz" | sha256sum -c -; \
+    tar -xzf /tmp/helm.tar.gz -C /tmp; \
+    mv "/tmp/${target}/helm" /usr/local/bin/helm; \
+    chmod +x /usr/local/bin/helm; \
+    rm -rf /tmp/helm.tar.gz "/tmp/${target}"; \
+    helm version --short
+
 # Install rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 # Copy the Rust binary from the build_rust_aztfexport_rename stage

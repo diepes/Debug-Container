@@ -69,6 +69,7 @@ Its big :( 4.6GB
 - aws cli
 - azure cli
 - git
+- helm
 - rust
 - ssh
 - nvm (nodejs)
