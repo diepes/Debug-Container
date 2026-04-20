@@ -16,7 +16,7 @@ RUN cargo build --release
 FROM --platform=${PLATFORM} docker.io/debian:trixie-slim
 
 RUN apt-get update \
-    && apt-get install -y \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         curl \
         openssl pkg-config \
         jo \
@@ -74,12 +74,14 @@ ENV UV_PY="${VIRTUAL_ENV}/bin/python"
 RUN uv pip install --python "${UV_PY}" pykerberos
 RUN uv pip install --python "${UV_PY}" "pywinrm[kerberos]" pywinrm requests
 RUN uv pip install --python "${UV_PY}" jmespath
+RUN uv pip install --python "${UV_PY}" kubernetes
+
 
 # Verify kerberos import at build time
 RUN "${UV_PY}" -c "import kerberos; import sys; print('pykerberos OK', getattr(kerberos,'__version__', '?'), sys.version)"
 
 # Azure CLI
-RUN curl -fsSL https://aka.ms/InstallAzureCLIDeb | bash
+RUN DEBIAN_FRONTEND=noninteractive curl -fsSL https://aka.ms/InstallAzureCLIDeb | bash
 
 # Ansible and Azure collection deps
 RUN uv pip install --python "${UV_PY}" ansible
