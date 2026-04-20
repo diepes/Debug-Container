@@ -58,11 +58,6 @@ Its big :( 4.6GB
 
               docker run -v ~/.okta/config.properties:/root/.okta/config.properties -v ~/.aws:/root/.aws -v ~/.kube:/root/.kube -it diepes/debug 
 
-       1. Run extractions script in container, intall okta package.
-
-
-              okta-get-aws-eks-credentials.sh
-
 ## Software in container
 
 - ansible
@@ -74,7 +69,6 @@ Its big :( 4.6GB
 - ssh
 - nvm (nodejs)
 - terraform (tfswitch + aztfexport)
-- okta-get-aws-eks-credentials.sh (Script to use okta java client EKS credential retrieving see e.g. above.)
 
 # Local test
 
